@@ -24,7 +24,7 @@ from app.data import (
     save_corporate_enquiry,
     utc_now_iso,
 )
-from app.mail import format_fields, send_inbox_email
+from app.mail import applicant_confirmation_text, format_fields, send_applicant_email, send_inbox_email
 
 main = Blueprint("main", __name__)
 
@@ -50,13 +50,21 @@ def _clean(value, limit):
     return (value or "").strip()[:limit]
 
 
-def _deliver_inbox_email(subject, body, reply_to=None):
-    sent = send_inbox_email(subject, body, reply_to=reply_to)
+def _deliver_inbox_email(subject, body, reply_to=None, autoresponse=None, cc=None):
+    sent = send_inbox_email(
+        subject,
+        body,
+        reply_to=reply_to,
+        autoresponse=autoresponse,
+        cc=cc,
+    )
     if not sent:
         session["outbound_mail"] = {
             "subject": subject,
             "body": body,
             "reply_to": reply_to or "",
+            "autoresponse": autoresponse or "",
+            "cc": cc or "",
         }
     return sent
 
@@ -219,6 +227,8 @@ def apply():
                     "motivation": form["motivation"],
                 }
             save_application(record)
+            confirmation = applicant_confirmation_text(get_site(), record["full_name"], course)
+            confirmation_subject = f"We received your application for {course['title']}"
             _deliver_inbox_email(
                 subject=f"Programme application: {course['title']}",
                 body="New application from the AfriCloud Institute website.\n\n"
@@ -236,6 +246,14 @@ def apply():
                 ),
                 reply_to=form["email"],
             )
+            if not send_applicant_email(form["email"], confirmation_subject, confirmation):
+                session["outbound_mail"] = {
+                    "subject": confirmation_subject,
+                    "body": confirmation,
+                    "reply_to": form["email"],
+                    "cc": form["email"],
+                    "autoresponse": confirmation,
+                }
             flash(
                 "Thank you. Your application has been received. Our team will contact you by email or phone. If you have been admitted to a cohort, join the WhatsApp group from the success note on this page.",
                 "success",

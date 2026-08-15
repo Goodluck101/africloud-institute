@@ -79,6 +79,13 @@
         <input type="hidden" name="_template" value="box">
         {% if outbound_mail.reply_to %}
         <input type="hidden" name="_replyto" value="{{ outbound_mail.reply_to }}">
+        <input type="hidden" name="email" value="{{ outbound_mail.reply_to }}">
+        {% endif %}
+        {% if outbound_mail.cc %}
+        <input type="hidden" name="_cc" value="{{ outbound_mail.cc }}">
+        {% endif %}
+        {% if outbound_mail.autoresponse %}
+        <input type="hidden" name="_autoresponse" value="{{ outbound_mail.autoresponse }}">
         {% endif %}
         <input type="hidden" name="message" value="{{ outbound_mail.body }}">
     </form>
