@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Goodluck Adiole",
+    "title": "Co-Founder",
+    "image": "/static/images/founders/goodluck-adiole.jpg",
+    "bio": [
+      "Goodluck Adiole is a seasoned technology professional, educator, and cybersecurity specialist with strong expertise across cloud computing, DevOps, and secure digital infrastructure. He has hands-on experience designing, deploying, and securing cloud-native systems using platforms such as AWS and Azure, with a professional background spanning cybersecurity operations, infrastructure automation, and DevSecOps practices within enterprise environments.",
+      "Driven by a passion for skills development and digital empowerment, Goodluck is committed to bridging the technology skills gap by delivering practical, industry-relevant training tailored to real-world demands. His work combines technical depth with a strong focus on mentorship, capacity building, and career readiness for aspiring tech professionals.",
+      "He is a Co-Founder of AfriCloud Institute, where he plays a key role in shaping the institute's vision, curriculum, and training standards; ensuring learners gain hands-on, job-ready skills in areas such as Cybersecurity, DevOps, Cloud Engineering, Data Analytics, and emerging technologies."
+    ]
+  },
+  {
+    "name": "Engr. Casmir C. Nguzoro",
+    "title": "Co-Founder",
+    "image": "/static/images/founders/casmir-nguzoro.jpg",
+    "bio": [
+      "Engr. Casmir C. Nguzoro is a Nigerian technology professional, cybersecurity advocate, and social impact leader with a strong focus on digital innovation, public awareness, and youth development. He is the Co-Founder of AfriCloud Institute, where he contributes to building digital skills, cybersecurity awareness, and technology capacity for individuals and organizations.",
+      "He is also the Founder of the United Network Against Violence and Abuse (UNAVA), a youth-focused social initiative committed to combating rape, drug abuse, and cultism, while actively supporting access to education for children through advocacy, sensitization, and community outreach programs.",
+      "With experience in cybersecurity awareness, financial fraud prevention, and digital safety education, Engr. Nguzoro has led and supported initiatives aimed at protecting youths and communities from digital and social risks. His work aligns strongly with the United Nations Sustainable Development Goals, particularly in the areas of quality education, good health and well-being, and peace and justice."
+    ]
+  },
+  {
+    "name": "Constantine Ukah",
+    "title": "Co-Founder",
+    "image": "/static/images/founders/constantine-ukah.jpg",
+    "bio": [
+      "Constantine Ukah is a cybersecurity professional and cloud security engineer with expertise in securing scalable cloud infrastructures across AWS and Google Cloud Platform (GCP). He has hands-on experience in cloud security, identity and access management, Infrastructure as Code (IaC), and DevSecOps practices, helping organizations build and maintain secure cloud environments.",
+      "Driven by a passion for cybersecurity and continuous learning, Constantine actively contributes to the technology community through technical research, security write-ups, and knowledge sharing. His work focuses on cloud security, threat prevention, access governance, and secure infrastructure design.",
+      "He is committed to advancing secure cloud adoption and helping professionals and organizations strengthen their security posture through practical, real-world security engineering and best practices."
+    ]
+  }
+]

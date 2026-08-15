@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">{{ page.kicker }}</p>
+        <h1>{{ page.title }}</h1>
+        <p class="lead">{{ page.lead }}</p>
+        <div class="hero-actions">
+            <a href="/apply" class="btn btn-large">Apply Now</a>
+            <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
+        </div>
+    </div>
+</section>
+
+<section class="courses-section">
+    <div class="container course-list">
+        {% for course in courses %}
+        <article class="course-row" id="{{ course.id }}">
+            <div class="course-media">
+                <img src="{{ course.image }}" alt="{{ course.title }}">
+                <span class="course-status course-status-{{ course.status }}">{{ course.status_label }}</span>
+            </div>
+            <div class="course-body">
+                <p class="course-kicker">{{ course.duration }} · {{ course.format }}</p>
+                <h2 class="course-title">{{ course.title }}</h2>
+                <p class="course-description">{{ course.description }}</p>
+
+                <div class="course-meta">
+                    <div>
+                        <span>Duration</span>
+                        <strong>{{ course.duration }}</strong>
+                    </div>
+                    <div>
+                        <span>Next cohort</span>
+                        <strong>{{ course.start_date }}</strong>
+                    </div>
+                    <div>
+                        <span>Schedule</span>
+                        <strong>{{ course.schedule }}</strong>
+                    </div>
+                    <div>
+                        <span>Fee</span>
+                        <strong>
+                            <s>{{ course.original_price }}</s>
+                            {{ course.price }}
+                        </strong>
+                    </div>
+                </div>
+
+                <h3 class="course-features-title">What you'll get</h3>
+                <ul class="course-feature-list">
+                    {% for feature in course.features %}
+                    <li>{{ feature }}</li>
+                    {% endfor %}
+                </ul>
+
+                <div class="course-foot">
+                    <p class="payment-info">{{ page.payment_note }}</p>
+                    <div class="course-actions">
+                        <a href="/apply?programme={{ course.id }}" class="btn btn-primary">Apply Now</a>
+                        <a href="/faq" class="btn btn-secondary">Questions</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="courses-cta">
+    <div class="container">
+        <h2>{{ page.cta_title }}</h2>
+        <p>{{ page.cta_text }}</p>
+        <div class="hero-actions center-actions">
+            <a href="/apply" class="btn btn-large">Apply Now</a>
+            <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

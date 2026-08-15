@@ -1,0 +1,198 @@
+{
+  "title": "Legal",
+  "intro": "These documents govern how AfriCloud Institute runs instructor-led technology training, handles applications, and expects students, staff, and partners to behave. They apply to our website, classrooms, labs, and the cohort WhatsApp group.",
+  "policies": [
+    {
+      "slug": "whistleblowing",
+      "title": "Whistle Blowing Policy",
+      "summary": "How to report fraud, harassment, unsafe labs, exam cheating, or misuse of student data without fear of retaliation.",
+      "intro": "AfriCloud Institute wants people to speak up when something is wrong. This policy tells students, applicants, instructors, and partners what to report, how to report it, and how we will treat that report.",
+      "sections": [
+        {
+          "heading": "What this policy covers",
+          "paragraphs": [
+            "Use this policy for serious concerns about AfriCloud Institute programmes, staff, or learners — not for ordinary class questions. Class schedules, fees, and enrolment queries should go through the Contact page or your coordinator.",
+            "Report in good faith if you reasonably believe any of the following has happened or is about to happen."
+          ]
+        },
+        {
+          "heading": "What you should report",
+          "paragraphs": [
+            "Financial misconduct: stealing fees, asking for unofficial cash payments, issuing fake receipts, or promising a certificate in exchange for money outside the official enrolment process.",
+            "Academic fraud: cheating on assessments, submitting someone else's project as your own, leaking exam or lab answers, or requesting a certificate without completing the required work.",
+            "Unauthorised hacking: using skills taught in cybersecurity or ethical hacking classes against AfriCloud Institute, classmates, employers, or any system you do not own and do not have written permission to test.",
+            "Data abuse: sharing applicant or student records, lab credentials, payment details, or private WhatsApp content with people who should not have them.",
+            "Harassment or safety: bullying, sexual harassment, threats, discrimination, or conduct that makes a class, lab, or the cohort WhatsApp group unsafe.",
+            "Conflicts of interest: an instructor or staff member steering students to a personal side deal that is not an official AfriCloud Institute programme."
+          ]
+        },
+        {
+          "heading": "How to report",
+          "paragraphs": [
+            "Do not post whistleblowing reports in the cohort WhatsApp group. That group is for class updates, not confidential complaints.",
+            "Send a report by email to the institute contact address on this website, or call the published phone number and ask to speak to a founder or programme lead. Say that you are making a whistleblowing report.",
+            "Include what happened, when and where it happened, who was involved if you know, and how we can reach you. You may ask to remain unnamed. We will still investigate where there is enough information to do so.",
+            "If someone is in immediate danger, contact the police or other emergency services first, then tell us."
+          ]
+        },
+        {
+          "heading": "What happens after you report",
+          "paragraphs": [
+            "We will acknowledge a genuine report and look into it. Only people who need to know will be told. We will not share your identity more widely than necessary unless the law requires it or you agree.",
+            "Outcomes can include a warning, removal from a programme, ending a staff or contractor engagement, correcting records, or referring the matter to law enforcement.",
+            "We will not punish anyone for reporting in good faith, even if the concern is not proven. Deliberately false reports made to harm someone may lead to removal from a programme or other action.",
+            "If your concern is really a personal data or website security issue, we may handle it under the Information Security Statement as well."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "privacy",
+      "title": "Privacy Policy",
+      "summary": "What personal data we collect from applicants and students, why we use it, and how you can ask us to correct or delete it.",
+      "intro": "This Privacy Policy explains how AfriCloud Institute handles personal data for our training business in Nigeria (remote and on-site). It should be read with our Information Security Statement, which describes how we protect systems and labs.",
+      "sections": [
+        {
+          "heading": "Who we are",
+          "paragraphs": [
+            "AfriCloud Institute provides instructor-led training in cybersecurity, cloud, DevOps, data, software engineering, and related skills. For privacy questions, use the email or phone number on the Contact page.",
+            "We handle personal data in line with applicable Nigerian data protection law, including the Nigeria Data Protection Act, and with this policy."
+          ]
+        },
+        {
+          "heading": "Data we collect",
+          "paragraphs": [
+            "From the Apply Now form and enrolment: name, email, phone number, city, programme choice, experience level, and anything you write about your goals.",
+            "From Contact and email or phone: the details you send us about a course, payment, or complaint.",
+            "From classes: attendance, assignment and project results, and whether you completed the programme, so we can issue a certificate where you have earned one.",
+            "From this website: basic technical data such as browser type and pages viewed, used to keep the site working. We do not run hidden advertising trackers on this site.",
+            "We do not ask you to send passwords, one-time codes, full payment card numbers, or copies of government ID through the website forms. Do not put those in the application or contact fields."
+          ]
+        },
+        {
+          "heading": "Why we use your data",
+          "paragraphs": [
+            "We use it to review applications, confirm enrolment, collect fees, run classes, issue certificates, answer support questions, improve programmes, and meet legal, tax, or audit duties.",
+            "If you are admitted, we may use your name and phone number to add you to the cohort WhatsApp group for class announcements. WhatsApp is operated by Meta. Messages in that group are also subject to WhatsApp's own terms and privacy policy.",
+            "We do not sell applicant or student lists. We do not use your application to send unrelated marketing from other companies."
+          ]
+        },
+        {
+          "heading": "Who else may see your data",
+          "paragraphs": [
+            "Instructors and coordinators see the information they need to teach and support your cohort.",
+            "Payment, hosting, or email providers may process data only to deliver their service to us.",
+            "An employer who sponsors your seat may receive attendance and completion information related to that sponsorship.",
+            "We may disclose data if the law requires it, or to investigate abuse of labs, fees, or other students."
+          ]
+        },
+        {
+          "heading": "How long we keep it",
+          "paragraphs": [
+            "Application records are kept while we process your request and for a reasonable period afterwards so we can answer follow-up questions and offer a later cohort if you asked us to.",
+            "Enrolment, assessment, and certificate records are kept for as long as needed to prove completion, handle disputes, and meet accounting or legal requirements. We delete or anonymise records when we no longer need them."
+          ]
+        },
+        {
+          "heading": "Your choices",
+          "paragraphs": [
+            "You may ask to see the personal data we hold about you, to correct it, or to delete it where we do not still need it for a programme, certificate, payment, or legal duty.",
+            "You may refuse the WhatsApp group; we will then use email or phone for official class notices, which may be slower.",
+            "Send privacy requests to the email on the Contact page. We may need to confirm it is you before we change or delete records."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "terms",
+      "title": "Terms and Conditions",
+      "summary": "The rules for applying, paying, attending class, using labs, and receiving a certificate.",
+      "intro": "These Terms apply when you use this website, apply for a bootcamp, enrol as a student, or take part in AfriCloud Institute training (online or on-site in Nigeria). By submitting an application or joining a cohort, you agree to these Terms, the Privacy Policy, the Code of Conduct, and the Information Security Statement.",
+      "sections": [
+        {
+          "heading": "What AfriCloud Institute provides",
+          "paragraphs": [
+            "We deliver instructor-led professional training and related mentorship. We are not a university and we do not award national degrees. A certificate of completion is issued only if you meet the assessment and attendance requirements for that cohort.",
+            "Programme titles, duration, start dates, and fees on the Bootcamps page describe the current advertised cohort. We may change a date, format (remote or on-site), or instructor if we must. If a change is material, we will tell enrolled students using the contact details they gave us."
+          ]
+        },
+        {
+          "heading": "Applications are not enrolment",
+          "paragraphs": [
+            "Submitting the Apply Now form is a request to join a programme. It does not reserve a seat and does not create a contract until we confirm enrolment in writing (email is enough) and you meet the payment conditions we state in that confirmation.",
+            "We may decline an application, suggest a different programme, or place you on a later cohort if a class is full or if the programme is not a fit for the background you described."
+          ]
+        },
+        {
+          "heading": "Fees and payment",
+          "paragraphs": [
+            "The price shown on a programme card is the advertised fee for that cohort. Where an original price is struck through, the lower figure is the current offer. Flexible monthly plans may be available; the exact instalments, due dates, and any conditions will be confirmed when you enrol — not guessed on the website.",
+            "Pay only through the official channels we give you in enrolment correspondence. Do not pay a private account because someone in a chat asked you to.",
+            "If you miss an instalment, we may pause lab access or class participation until the account is in order. Refunds, if any, are those we confirm in writing at enrolment or by later written agreement. Completing an application form does not by itself entitle you to a refund."
+          ]
+        },
+        {
+          "heading": "Classes, labs, and materials",
+          "paragraphs": [
+            "You must use training labs, cloud accounts, and hacking exercises only in the environments we authorise, and only for the assigned work. Testing, scanning, or exploiting any other system is a breach of these Terms and of the Code of Conduct.",
+            "Course slides, recordings, lab guides, and assignment briefs belong to AfriCloud Institute or our licensors. You may use them for your own learning. You may not republish them, sell them, or share class links with people who are not enrolled.",
+            "Career support, where a programme lists it, means practical help such as project feedback or interview guidance. It is not a promise of a job or of a particular salary."
+          ]
+        },
+        {
+          "heading": "Ending a place on a programme",
+          "paragraphs": [
+            "You may withdraw by email. Any refund will follow the written enrolment terms for your cohort.",
+            "We may suspend or remove a student who breaks these Terms, the Code of Conduct, or the lab rules, or who does not pay agreed fees. Removal for misconduct may mean you lose remaining classes and are not entitled to a certificate.",
+            "Nigerian law governs these Terms. If a court finds one clause unenforceable, the rest still apply."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "code-of-conduct",
+      "title": "Code of Conduct Policy",
+      "summary": "How we expect students and instructors to behave in class, in labs, and in the cohort WhatsApp group.",
+      "intro": "AfriCloud Institute is a professional classroom. This Code applies to students, instructors, mentors, and visitors in live sessions, on-site venues, labs, email, and the cohort WhatsApp group.",
+      "sections": [
+        {
+          "heading": "Respect and inclusion",
+          "paragraphs": [
+            "Treat classmates, instructors, and staff with courtesy. Do not harass, bully, or discriminate on the basis of gender, religion, ethnicity, disability, age, or any other protected characteristic.",
+            "Disagreements about tools or career paths are normal. Personal attacks, sexual comments, and intimidation are not."
+          ]
+        },
+        {
+          "heading": "Learning honestly",
+          "paragraphs": [
+            "Do your own assessments and projects unless a task is explicitly a team exercise. Do not copy another student's lab work or share exam content.",
+            "If you use an AI tool or other help, say so when the assignment asks you to. Passing off generated or copied work as fully your own is academic misconduct."
+          ]
+        },
+        {
+          "heading": "Cybersecurity and lab rules",
+          "paragraphs": [
+            "Ethical hacking, penetration testing, and security tooling taught here may be used only on systems you own or on labs we provide, or where you have clear written authorisation. Using class skills against a bank, an employer, a classmate, or the public internet without permission is forbidden and may be reported to the authorities.",
+            "Do not introduce malware, mining software, or unauthorised access methods into AfriCloud Institute systems. Do not take production data from a workplace into a class lab unless your employer has approved that use in writing."
+          ]
+        },
+        {
+          "heading": "WhatsApp, cameras, and class time",
+          "paragraphs": [
+            "The cohort WhatsApp group is for timetable changes, session links, and relevant study questions. Do not spam, post unrelated adverts, share other people's phone numbers, or paste passwords, OTPs, or payment receipts into the group.",
+            "Join live sessions on time where you can. If you will miss a class, tell your instructor. Mute your microphone when you are not speaking. Do not record other students without their agreement.",
+            "On-site, follow house rules for the venue. Do not attend class under the influence of alcohol or illegal drugs."
+          ]
+        },
+        {
+          "heading": "If this Code is broken",
+          "paragraphs": [
+            "We may give a warning, remove WhatsApp access, pause lab access, or remove you from the programme, depending on how serious the conduct is.",
+            "Harassment, unauthorised hacking, and fee fraud are treated as serious. Report them under the Whistle Blowing Policy, not in the public group chat.",
+            "Instructors and staff must follow this Code as well. A concern about an instructor should be sent privately using the Contact details on this website."
+          ]
+        }
+      ]
+    }
+  ]
+}

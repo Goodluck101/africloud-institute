@@ -1,0 +1,78 @@
+{
+  "hero_kicker": "Instructor-led training",
+  "hero_title": "Build job-ready Cloud, DevOps, AI and Cybersecurity skills.",
+  "hero_subtitle": "Instructor-led Cloud, DevOps, AI and Cybersecurity training — live and remote for learners worldwide.",
+  "how_it_works": [
+    {
+      "step": "01",
+      "title": "Apply",
+      "text": "Choose a programme and send your details through Apply Now. It takes a few minutes."
+    },
+    {
+      "step": "02",
+      "title": "Enrol",
+      "text": "We confirm your cohort, fees, schedule, and payment plan by email or phone."
+    },
+    {
+      "step": "03",
+      "title": "Learn together",
+      "text": "Join instructor-led sessions, labs, and the cohort WhatsApp group for class updates and support."
+    }
+  ],
+  "promises": [
+    {
+      "title": "Instructor-led",
+      "text": "Live teaching and mentorship, not recordings alone."
+    },
+    {
+      "title": "Hands-on labs",
+      "text": "Projects that match what teams actually do at work."
+    },
+    {
+      "title": "Career support",
+      "text": "Portfolio guidance and job-readiness where the programme includes it."
+    },
+    {
+      "title": "Flexible payment",
+      "text": "Monthly plans are available. Terms and conditions apply."
+    }
+  ],
+  "audiences": [
+    {
+      "title": "Career changers",
+      "text": "Move into tech with a structured path, mentorship, and portfolio projects."
+    },
+    {
+      "title": "Working professionals",
+      "text": "Add cloud, DevOps, security, or data skills without putting your career on hold."
+    },
+    {
+      "title": "Teams and employers",
+      "text": "Register staff for live remote cohorts, or ask us for a private group for your company."
+    }
+  ],
+  "featured_heading": "FEATURED",
+  "featured_highlight": "PROGRAMMES",
+  "featured_intro": "A snapshot of current bootcamps. See the full catalogue for dates and fees.",
+  "corporate": {
+    "title": "Corporate training",
+    "text": "Register your employees for live remote programmes in cybersecurity, cloud, DevOps, data, and software engineering. One form. We reply with a cohort plan and fees.",
+    "points": [
+      "Private or mixed cohorts for your team",
+      "Live instruction, labs, and mentorship",
+      "Progress updates for the sponsoring manager"
+    ]
+  },
+  "founder_heading": "FOUNDER'S",
+  "founder_highlight": "MESSAGE",
+  "founder_message": [
+    "At AfriCloud Institute, our vision is to build a new generation of highly skilled, globally competitive technology professionals from Africa. We believe that access to practical, industry-relevant training should not be limited by geography, background, or prior exposure. Technology is one of the strongest tools for economic empowerment, and our mission is to make that opportunity accessible to all who are willing to learn and grow.",
+    "As a practitioner in cybersecurity, cloud computing, and DevOps, I have seen firsthand the gap between theoretical knowledge and real-world industry expectations. AfriCloud Institute was founded to bridge that gap, by focusing on hands-on learning, real project experience, and mentorship aligned with current global standards.",
+    "Our training programs are designed not just to teach tools, but to develop problem-solvers, critical thinkers, and professionals who can confidently contribute in modern tech environments. We are committed to excellence, integrity, and continuous innovation, while nurturing talent that can compete and collaborate on a global scale.",
+    "AfriCloud Institute is more than a training platform; it is a community dedicated to growth, impact, and the future of technology in Africa."
+  ],
+  "founder_name": "Goodluck Adiole",
+  "founder_role": "Co-Founder, AfriCloud Institute",
+  "whatsapp_panel_title": "Stay close to your cohort",
+  "whatsapp_panel_text": "Class reminders, session links, and peer support live in the AfriCloud Institute WhatsApp group for admitted learners."
+}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">Legal</p>
+        <h1>{{ legal.title }}</h1>
+        <p class="lead">{{ legal.intro }}</p>
+        <div class="hero-actions">
+            <a href="/legal/download" class="btn btn-large">Download all policies (PDF)</a>
+        </div>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container">
+        <div class="legal-grid">
+            {% for policy in legal.policies %}
+            <a class="legal-card" href="/legal/{{ policy.slug }}">
+                <h2>{{ policy.title }}</h2>
+                <p>{{ policy.summary }}</p>
+                <span>Read policy</span>
+            </a>
+            {% endfor %}
+            <a class="legal-card" href="/information-security">
+                <h2>Information Security Statement</h2>
+                <p>How we protect applicant data, training labs, and what we expect from students using class skills.</p>
+                <span>Read statement</span>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

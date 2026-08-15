@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">Enrolment</p>
+        <h1>Apply Now</h1>
+        <p class="lead">Choose a programme and send your details. We will contact you with cohort dates, fees, and next steps.</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container apply-layout">
+        <div>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                <div class="flash-list">
+                    {% for category, message in messages %}
+                    <p class="flash flash-{{ category }}">{{ message }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            {% endwith %}
+
+            <form class="apply-form" method="post" action="/apply" novalidate>
+                <div class="form-grid">
+                    <label>
+                        Full name
+                        <input type="text" name="full_name" value="{{ form.full_name }}" required maxlength="120">
+                    </label>
+                    <label>
+                        Email address
+                        <input type="email" name="email" value="{{ form.email }}" required maxlength="200">
+                    </label>
+                    <label>
+                        Phone number
+                        <input type="tel" name="phone" value="{{ form.phone }}" required maxlength="40" placeholder="+234...">
+                    </label>
+                    <label>
+                        City / location
+                        <input type="text" name="city" value="{{ form.city }}" maxlength="80">
+                    </label>
+                    <label class="form-span">
+                        Programme
+                        <select name="programme" required>
+                            <option value="">Select a programme</option>
+                            {% for course in courses %}
+                            <option value="{{ course.id }}" {% if form.programme == course.id %}selected{% endif %}>
+                                {{ course.title }} — {{ course.duration }}, next cohort {{ course.start_date }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </label>
+                    <label class="form-span">
+                        Experience level
+                        <select name="experience">
+                            <option value="">Select one</option>
+                            {% for option in experience_levels %}
+                            <option value="{{ option }}" {% if form.experience == option %}selected{% endif %}>{{ option }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
+                    <label class="form-span">
+                        Why this programme?
+                        <textarea name="motivation" rows="5" maxlength="2000" placeholder="Tell us your goals, preferred schedule, or anything we should know.">{{ form.motivation }}</textarea>
+                    </label>
+                </div>
+
+                <label class="consent-row">
+                    <input type="checkbox" name="consent" value="yes" required>
+                    <span>
+                        I agree to the
+                        <a href="/legal/terms">Terms and Conditions</a>
+                        and
+                        <a href="/legal/privacy">Privacy Policy</a>,
+                        and I understand how my details will be used as described in the
+                        <a href="/information-security">Information Security Statement</a>.
+                    </span>
+                </label>
+
+                <button type="submit" class="btn btn-primary btn-large">Submit application</button>
+            </form>
+        </div>
+
+        <aside class="apply-aside">
+            <h2>After you apply</h2>
+            <ol>
+                <li>We review your form and reach you by email or phone.</li>
+                <li>You confirm fees, schedule, and payment plan.</li>
+                <li>Admitted learners join the cohort WhatsApp group for class updates.</li>
+            </ol>
+            <a class="btn btn-whatsapp" href="{{ site.whatsapp_group }}" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
+            <p class="aside-note">The group is for enrolled cohort members. Apply first if you are not yet admitted.</p>
+        </aside>
+    </div>
+</section>
+{% endblock %}

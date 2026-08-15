@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">Trust and safety</p>
+        <h1>{{ statement.title }}</h1>
+        <p class="lead">{{ statement.intro }}</p>
+        <p class="hero-meta">{{ statement.updated_label }}: {{ current_year }}</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container">
+        <div class="policy-content">
+            {% for section in statement.sections %}
+            <article class="policy-section">
+                <h2>{{ section.heading }}</h2>
+                {% for paragraph in section.paragraphs %}
+                <p>{{ paragraph }}</p>
+                {% endfor %}
+            </article>
+            {% endfor %}
+        </div>
+        <div class="page-actions">
+            <a href="/legal/download" class="btn btn-primary">Download PDF pack</a>
+            <a href="/legal" class="btn btn-secondary">Legal documents</a>
+            <a href="/faq" class="btn btn-secondary">Read the FAQ</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

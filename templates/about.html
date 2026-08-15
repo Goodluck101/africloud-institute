@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">About us</p>
+        <h1>About AfriCloud Institute</h1>
+        <p class="lead">
+            AfriCloud Institute is an instructor-led, career-oriented training platform for working professionals,
+            career changers, and organisations. We teach Cybersecurity, DevOps, Machine Learning, Data Analytics,
+            Software Engineering, and related digital skills.
+        </p>
+    </div>
+</section>
+
+<div class="about-image">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=480&fit=crop"
+         alt="Students learning together">
+</div>
+
+<section class="band">
+    <div class="container">
+        <h2 class="section-title">CORE <span class="highlight">VALUES</span></h2>
+        <div class="values-grid">
+            <article class="value-card">
+                <h3>Excellence</h3>
+                <p>We hold a high bar for skills, teaching quality, and the work students produce.</p>
+            </article>
+            <article class="value-card">
+                <h3>Adaptability</h3>
+                <p>Curriculum stays aligned with current industry tools and hiring needs.</p>
+            </article>
+            <article class="value-card">
+                <h3>Community</h3>
+                <p>Mentorship, peer support, and the cohort WhatsApp group extend learning beyond class time.</p>
+            </article>
+            <article class="value-card">
+                <h3>Innovation</h3>
+                <p>Students learn current platforms, practices, and ways of working used in real teams.</p>
+            </article>
+            <article class="value-card">
+                <h3>Integrity</h3>
+                <p>We are transparent about programmes, fees, and how we handle student information.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<div class="about-image">
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=480&fit=crop"
+         alt="Team collaboration">
+</div>
+
+<section class="founders-section">
+    <div class="container">
+        <h2 class="section-title">OUR <span class="highlight">FOUNDERS</span></h2>
+        <div class="founders-list">
+            {% for founder in founders %}
+            <article class="founder-card">
+                <div class="founder-profile">
+                    {% if founder.image %}
+                    <div class="founder-image">
+                        <img src="{{ founder.image }}" alt="{{ founder.name }}">
+                    </div>
+                    {% else %}
+                    <div class="founder-icon">👤</div>
+                    {% endif %}
+                    <h3>{{ founder.name }}</h3>
+                    <p class="founder-title">{{ founder.title }}</p>
+                </div>
+                {% if founder.bio %}
+                <div class="founder-bio">
+                    {% for paragraph in founder.bio %}
+                    <p>{{ paragraph }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">Contact</p>
+        <h1>Talk to AfriCloud Institute</h1>
+        <p class="lead">Programme enquiries, enrolment support, and corporate training. We respond by email or phone.</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container">
+        <div class="contact-grid">
+            <a class="contact-card" href="mailto:{{ site.email }}">
+                <h2>Email</h2>
+                <p>{{ site.email }}</p>
+            </a>
+            <a class="contact-card" href="tel:{{ site.phone }}">
+                <h2>Phone</h2>
+                <p>{{ site.phone_display }}</p>
+            </a>
+            <div class="contact-card">
+                <h2>Location</h2>
+                <p>{{ site.location }}</p>
+            </div>
+            <a class="contact-card contact-card-whatsapp" href="{{ site.whatsapp_group }}" target="_blank" rel="noopener noreferrer">
+                <h2>WhatsApp</h2>
+                <p>{{ site.whatsapp_label }}</p>
+            </a>
+        </div>
+
+        <div class="page-actions">
+            <a href="/apply" class="btn btn-primary">Apply for a programme</a>
+            <a href="/corporate" class="btn btn-secondary">Corporate training</a>
+            <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">Open WhatsApp group</a>
+            <a href="/legal" class="btn btn-secondary">Legal</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

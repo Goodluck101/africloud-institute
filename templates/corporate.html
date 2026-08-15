@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">{{ corporate.kicker }}</p>
+        <h1>{{ corporate.title }}</h1>
+        <p class="lead">{{ corporate.lead }}</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container corporate-layout">
+        <div>
+            <div class="benefit-stack">
+                {% for item in corporate.benefits %}
+                <article class="value-card">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.text }}</p>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                <div class="flash-list">
+                    {% for category, message in messages %}
+                    <p class="flash flash-{{ category }}">{{ message }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            {% endwith %}
+
+            <form class="apply-form" method="post" action="/corporate" novalidate>
+                <h2 class="form-title">Register your employees</h2>
+                <div class="form-grid">
+                    <label>
+                        Company name
+                        <input type="text" name="company_name" value="{{ form.company_name }}" required maxlength="160">
+                    </label>
+                    <label>
+                        Contact name
+                        <input type="text" name="contact_name" value="{{ form.contact_name }}" required maxlength="120">
+                    </label>
+                    <label>
+                        Job title
+                        <input type="text" name="job_title" value="{{ form.job_title }}" maxlength="120">
+                    </label>
+                    <label>
+                        Work email
+                        <input type="email" name="email" value="{{ form.email }}" required maxlength="200">
+                    </label>
+                    <label>
+                        Phone
+                        <input type="tel" name="phone" value="{{ form.phone }}" required maxlength="40">
+                    </label>
+                    <label>
+                        Team size
+                        <select name="team_size">
+                            <option value="">Select headcount</option>
+                            {% for size in corporate.team_sizes %}
+                            <option value="{{ size }}" {% if form.team_size == size %}selected{% endif %}>{{ size }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
+                    <label class="form-span">
+                        Preferred start
+                        <input type="text" name="preferred_start" value="{{ form.preferred_start }}" maxlength="80" placeholder="e.g. next cohort, or March 2026">
+                    </label>
+                    <fieldset class="form-span programme-set">
+                        <legend>Programmes</legend>
+                        {% for course in courses %}
+                        <label class="check-row">
+                            <input type="checkbox" name="programmes" value="{{ course.id }}" {% if course.id in selected_programmes %}checked{% endif %}>
+                            <span>{{ course.title }}</span>
+                        </label>
+                        {% endfor %}
+                    </fieldset>
+                    <label class="form-span">
+                        Notes
+                        <textarea name="notes" rows="4" maxlength="2000" placeholder="Time zone, private cohort, billing contact, or anything we should know.">{{ form.notes }}</textarea>
+                    </label>
+                </div>
+                <label class="consent-row">
+                    <input type="checkbox" name="consent" value="yes" required>
+                    <span>
+                        I agree to the
+                        <a href="/legal/privacy">Privacy Policy</a>
+                        and
+                        <a href="/legal/terms">Terms and Conditions</a>.
+                    </span>
+                </label>
+                <button type="submit" class="btn btn-primary btn-large">Send request</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

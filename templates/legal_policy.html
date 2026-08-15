@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">Legal</p>
+        <h1>{{ policy.title }}</h1>
+        <p class="lead">{{ policy.intro }}</p>
+        <p class="hero-meta">Last reviewed: {{ current_year }}</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container legal-layout">
+        <nav class="legal-nav" aria-label="Legal documents">
+            <a href="/legal">All legal documents</a>
+            {% for item in legal.policies %}
+            <a href="/legal/{{ item.slug }}" {% if item.slug == policy.slug %}aria-current="page"{% endif %}>{{ item.title }}</a>
+            {% endfor %}
+            <a href="/information-security">Information Security Statement</a>
+        </nav>
+
+        <div class="policy-content">
+            {% for section in policy.sections %}
+            <article class="policy-section">
+                <h2>{{ section.heading }}</h2>
+                {% for paragraph in section.paragraphs %}
+                <p>{{ paragraph }}</p>
+                {% endfor %}
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-actions">
+            <a href="/legal/download" class="btn btn-primary">Download PDF pack</a>
+            <a href="/legal" class="btn btn-secondary">Back to Legal</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

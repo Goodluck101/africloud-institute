@@ -1,0 +1,26 @@
+[
+  {
+    "quote": "The labs felt like real work, not slides. I finished the cybersecurity track with a project I could actually talk about in interviews.",
+    "name": "Amina K.",
+    "role": "Security analyst",
+    "programme": "Cybersecurity Professional Training"
+  },
+  {
+    "quote": "I needed AWS and CI/CD without quitting my job. Evening sessions and clear feedback on pipelines made that possible.",
+    "name": "Daniel O.",
+    "role": "DevOps engineer",
+    "programme": "AWS DevOps Engineer Professional Program"
+  },
+  {
+    "quote": "Our company enrolled five engineers. The instructors kept the pace practical, and we could apply the same patterns back at work the next day.",
+    "name": "Chioma E.",
+    "role": "Engineering manager",
+    "programme": "Corporate cohort"
+  },
+  {
+    "quote": "I changed careers from a non-tech role. Mentorship and the cohort group kept me accountable when the material got hard.",
+    "name": "Samuel T.",
+    "role": "Junior cloud engineer",
+    "programme": "Software Engineering Bootcamp"
+  }
+]

@@ -1,0 +1,170 @@
+{
+  "kicker": "Bootcamps",
+  "title": "Professional training programmes",
+  "lead": "Industry-relevant skills, instructor-led teaching, and hands-on projects. Apply for the cohort that matches your goal.",
+  "payment_note": "Flexible monthly payment plans available. Terms & conditions apply.",
+  "cta_title": "Ready for the next cohort?",
+  "cta_text": "Apply for a programme, then stay connected through email, phone, and the cohort WhatsApp group once you are admitted.",
+  "programmes": [
+    {
+      "id": "cybersecurity",
+      "title": "Cybersecurity Professional Training",
+      "description": "Master the fundamentals of protecting digital assets and infrastructure. This comprehensive program covers network security, threat detection, incident response, and security best practices to safeguard organizations against cyber threats.",
+      "image": "/static/images/courses/cybersecurity.jpg",
+      "duration": "6 Months",
+      "duration_months": 6,
+      "intake_every_months": 6,
+      "starts_on": "2026-02-15",
+      "schedule": "Live online · Weekends",
+      "format": "Remote · Worldwide",
+      "price": "$120",
+      "original_price": "$600",
+      "features": [
+        "Comprehensive online training",
+        "Expert-led mentorship sessions",
+        "Hands-on security projects",
+        "Career placement support"
+      ]
+    },
+    {
+      "id": "devops",
+      "title": "AWS DevOps Engineer Professional Program",
+      "description": "Gain practical expertise in DevOps methodologies and best practices for continuous development, testing, and deployment. Learn configuration management, CI/CD pipelines, and monitoring throughout the software development lifecycle.",
+      "image": "/static/images/courses/devops.jpg",
+      "duration": "5 Months",
+      "duration_months": 5,
+      "intake_every_months": 5,
+      "starts_on": "2026-02-20",
+      "schedule": "Live online · Weeknights",
+      "format": "Remote · Worldwide",
+      "price": "$99",
+      "original_price": "$500",
+      "features": [
+        "100% online learning",
+        "Guided mentorships",
+        "Project-based learning",
+        "Job assistance provided"
+      ]
+    },
+    {
+      "id": "machine-learning",
+      "title": "Machine Learning & Artificial Intelligence",
+      "description": "Explore the cutting-edge world of AI and machine learning. Build intelligent systems using modern algorithms, neural networks, and deep learning frameworks to solve real-world problems and create innovative solutions.",
+      "image": "/static/images/courses/machine-learning.jpg",
+      "duration": "7 Months",
+      "duration_months": 7,
+      "intake_every_months": 7,
+      "starts_on": "2026-03-01",
+      "schedule": "Live online · Saturdays",
+      "format": "Remote · Worldwide",
+      "price": "$150",
+      "original_price": "$700",
+      "features": [
+        "Advanced AI techniques",
+        "Industry expert mentors",
+        "Real-world ML projects",
+        "Career guidance included"
+      ]
+    },
+    {
+      "id": "data-analytics",
+      "title": "Data Analytics & Business Intelligence",
+      "description": "Transform raw data into actionable insights. Learn data visualization, statistical analysis, and business intelligence tools to drive data-driven decision making and create compelling analytical reports.",
+      "image": "/static/images/courses/data-analytics.jpg",
+      "duration": "5 Months",
+      "duration_months": 5,
+      "intake_every_months": 5,
+      "starts_on": "2026-02-25",
+      "schedule": "Live online · Weekends",
+      "format": "Remote · Worldwide",
+      "price": "$110",
+      "original_price": "$550",
+      "features": [
+        "Interactive online sessions",
+        "Professional mentorship",
+        "Portfolio development",
+        "Job placement assistance"
+      ]
+    },
+    {
+      "id": "ethical-hacking",
+      "title": "Ethical Hacking & Penetration Testing",
+      "description": "Learn offensive security techniques to identify and exploit vulnerabilities ethically. Master penetration testing methodologies, vulnerability assessment, and security auditing to protect systems from malicious attacks.",
+      "image": "/static/images/courses/ethical-hacking.jpg",
+      "duration": "6 Months",
+      "duration_months": 6,
+      "intake_every_months": 6,
+      "starts_on": "2026-03-05",
+      "schedule": "Live online · Weeknights",
+      "format": "Remote · Worldwide",
+      "price": "$130",
+      "original_price": "$650",
+      "features": [
+        "Practical hacking labs",
+        "Certified instructors",
+        "Hands-on penetration testing",
+        "Career coaching support"
+      ]
+    },
+    {
+      "id": "graphics-design",
+      "title": "Professional Graphics Design",
+      "description": "Unleash your creativity and master visual communication. Learn industry-standard design tools, typography, color theory, and branding to create stunning graphics for digital and print media.",
+      "image": "/static/images/courses/graphics-design.jpg",
+      "duration": "4 Months",
+      "duration_months": 4,
+      "intake_every_months": 4,
+      "starts_on": "2026-02-18",
+      "schedule": "Live online · Weekends",
+      "format": "Remote · Worldwide",
+      "price": "$85",
+      "original_price": "$400",
+      "features": [
+        "Flexible online learning",
+        "Creative mentorship",
+        "Portfolio building projects",
+        "Freelance guidance"
+      ]
+    },
+    {
+      "id": "software-engineering",
+      "title": "Software Engineering Bootcamp",
+      "description": "Build robust, scalable applications using modern software development practices. Master programming fundamentals, software architecture, testing methodologies, and agile development to become a professional software engineer.",
+      "image": "/static/images/courses/software-engineering.jpg",
+      "duration": "8 Months",
+      "duration_months": 8,
+      "intake_every_months": 8,
+      "starts_on": "2026-03-10",
+      "schedule": "Live online · Weeknights",
+      "format": "Remote · Worldwide",
+      "price": "$160",
+      "original_price": "$800",
+      "features": [
+        "Comprehensive curriculum",
+        "Expert code reviews",
+        "Real-world projects",
+        "Career services included"
+      ]
+    },
+    {
+      "id": "python-programming",
+      "title": "Python Programming Mastery",
+      "description": "Master Python, one of the most versatile programming languages. From basics to advanced concepts, learn web development, automation, data manipulation, and scripting to build powerful applications.",
+      "image": "/static/images/courses/python-programming.jpg",
+      "duration": "4 Months",
+      "duration_months": 4,
+      "intake_every_months": 4,
+      "starts_on": "2026-02-22",
+      "schedule": "Live online · Saturdays",
+      "format": "Remote · Worldwide",
+      "price": "$90",
+      "original_price": "$450",
+      "features": [
+        "Beginner to advanced",
+        "Live coding sessions",
+        "Project-based curriculum",
+        "Job readiness training"
+      ]
+    }
+  ]
+}

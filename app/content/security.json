@@ -1,0 +1,72 @@
+{
+  "title": "Information Security Statement",
+  "updated_label": "Last reviewed",
+  "intro": "AfriCloud Institute is a technology training organisation. We collect and handle personal information from applicants, students, and visitors so we can deliver training, respond to enquiries, and operate this website. This statement explains how we protect that information and what we expect from everyone who uses our services.",
+  "sections": [
+    {
+      "heading": "Our commitment",
+      "paragraphs": [
+        "We treat personal data as confidential and use it only for legitimate training, enrolment, support, and operational purposes. We do not sell student or applicant information.",
+        "Because we teach cybersecurity, cloud, and related disciplines, we hold ourselves to a high standard: protect data by design, limit access to what is needed, and respond promptly when something goes wrong."
+      ]
+    },
+    {
+      "heading": "Information we collect",
+      "paragraphs": [
+        "When you apply for a programme, contact us, or use this website, we may collect your name, email address, phone number, location, programme interest, education or work background, and any message you choose to send us.",
+        "We may also collect basic technical data such as browser type and pages visited, which helps us keep the site available and secure. We do not use this website to run hidden tracking for advertising."
+      ]
+    },
+    {
+      "heading": "How we use your information",
+      "paragraphs": [
+        "We use your information to process applications, confirm enrolment, communicate class schedules and payments, provide learner support, improve our programmes, and meet legal or regulatory obligations. Admitted learners may also receive class updates through the cohort WhatsApp group.",
+        "If we need to use your information for a new purpose that is not compatible with the above, we will tell you first and, where required, ask for your consent."
+      ]
+    },
+    {
+      "heading": "How we protect information",
+      "paragraphs": [
+        "Application and contact records are stored separately from public website files and are accessible only to authorised AfriCloud Institute staff who need them to do their work.",
+        "We apply least-privilege access, keep software updated, and use secure transmission (HTTPS) where this site is served over TLS. Staff are expected to use strong authentication and to avoid sharing login details.",
+        "No online service can guarantee absolute security. We work to reduce risk and to detect and contain incidents quickly."
+      ]
+    },
+    {
+      "heading": "Your responsibilities as a learner or user",
+      "paragraphs": [
+        "Keep your own accounts, devices, and coursework credentials private. Do not share class links, lab access, or assessment materials with anyone who is not enrolled.",
+        "Provide accurate information on applications and keep your contact details up to date so we can reach you about classes, payments, and security notices.",
+        "Do not upload or send us passwords, one-time codes, full payment card numbers, government ID images, or other sensitive secrets through the website contact or application forms."
+      ]
+    },
+    {
+      "heading": "Training labs and acceptable use",
+      "paragraphs": [
+        "Hands-on labs, penetration-testing exercises, and cloud projects are provided only for authorised learning. Skills taught at AfriCloud Institute must never be used to attack, probe, or access systems without explicit permission from the owner.",
+        "Unauthorised scanning, exploitation, data theft, malware distribution, or fraud — including against classmates, AfriCloud Institute, or any third party — is prohibited and may lead to removal from a programme and referral to the appropriate authorities.",
+        "Treat lab data, dummy credentials, and classmate information as confidential. Do not copy production data into labs or use real customer environments for practice unless your employer has formally authorised it."
+      ]
+    },
+    {
+      "heading": "Sharing with others",
+      "paragraphs": [
+        "We may share information with instructors, mentors, and service providers who help us deliver training, process payments, or host infrastructure, and only as needed for those services.",
+        "We may disclose information if required by law, to protect the rights and safety of our students and staff, or to investigate abuse of our systems or programmes."
+      ]
+    },
+    {
+      "heading": "Retention",
+      "paragraphs": [
+        "We keep application and enrolment records for as long as needed to deliver the programme, provide support, maintain academic records, and meet legal, tax, or audit requirements. Records that are no longer needed are deleted or anonymised where practical."
+      ]
+    },
+    {
+      "heading": "Report a security or privacy concern",
+      "paragraphs": [
+        "If you believe personal data has been misused, a training account has been compromised, or you have found a security issue in our website or learning environment, contact us immediately. Do not publicly disclose vulnerability details until we have had a reasonable chance to investigate and fix the issue.",
+        "Use the contact details on this website. Include what happened, when you noticed it, and how we can reach you. We will acknowledge genuine reports and keep you informed where it is appropriate to do so."
+      ]
+    }
+  ]
+}

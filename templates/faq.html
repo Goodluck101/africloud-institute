@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="kicker">Help</p>
+        <h1>Frequently asked questions</h1>
+        <p class="lead">Programmes, payments, certificates, WhatsApp cohorts, and how we protect your information.</p>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container">
+        <div class="faq-list">
+            {% for item in faqs %}
+            <details class="faq-item">
+                <summary>{{ item.question }}</summary>
+                <p>{{ item.answer }}</p>
+            </details>
+            {% endfor %}
+        </div>
+        <div class="page-actions">
+            <a href="/apply" class="btn btn-primary">Apply Now</a>
+            <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
+            <a href="/contact" class="btn btn-secondary">Contact us</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero-section">
+    <div class="container hero-inner">
+        <p class="kicker">{{ home.hero_kicker }}</p>
+        <h1>{{ home.hero_title }}</h1>
+        <p class="hero-subtitle">{{ home.hero_subtitle }}</p>
+        <div class="hero-actions">
+            <a href="/apply" class="btn btn-large">Apply Now</a>
+            <a href="/courses" class="btn btn-ghost">View bootcamps</a>
+            <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
+        </div>
+    </div>
+</section>
+
+<section class="band band-white">
+    <div class="container">
+        <div class="promise-grid">
+            {% for item in home.promises %}
+            <article class="promise-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">HOW IT <span class="highlight">WORKS</span></h2>
+            <p>From application to classroom in three clear steps.</p>
+        </div>
+        <div class="steps-grid">
+            {% for item in home.how_it_works %}
+            <article class="step-card">
+                <span class="step-number">{{ item.step }}</span>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="band band-white">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">{{ home.featured_heading }} <span class="highlight">{{ home.featured_highlight }}</span></h2>
+            <p>{{ home.featured_intro }}</p>
+        </div>
+        <div class="mini-course-grid">
+            {% for course in featured_courses %}
+            <article class="mini-course-card">
+                <div class="mini-course-media">
+                    <img src="{{ course.image }}" alt="{{ course.title }}">
+                    <span class="course-status course-status-{{ course.status }}">{{ course.status_label }}</span>
+                </div>
+                <div class="mini-course-body">
+                    <p class="mini-meta">{{ course.duration }} · {{ course.start_date }}</p>
+                    <h3>{{ course.title }}</h3>
+                    <p>{{ course.description[:140] }}{% if course.description|length > 140 %}…{% endif %}</p>
+                    <div class="mini-course-footer">
+                        <strong>{{ course.price }}</strong>
+                        <a href="/apply?programme={{ course.id }}">Apply</a>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        <div class="page-actions">
+            <a href="/courses" class="btn btn-primary">See all bootcamps</a>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">WHO IT'S <span class="highlight">FOR</span></h2>
+        </div>
+        <div class="audience-grid">
+            {% for item in home.audiences %}
+            <article class="audience-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="band band-white">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">WHAT LEARNERS <span class="highlight">SAY</span></h2>
+            <p>Voices from people who trained with us as individuals or as part of a company cohort.</p>
+        </div>
+        <div class="testimonial-grid">
+            {% for item in testimonials %}
+            <figure class="testimonial-card">
+                <blockquote>{{ item.quote }}</blockquote>
+                <figcaption>
+                    <strong>{{ item.name }}</strong>
+                    <span>{{ item.role }}</span>
+                    <span class="testimonial-course">{{ item.programme }}</span>
+                </figcaption>
+            </figure>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="corporate-band">
+    <div class="container corporate-band-inner">
+        <div>
+            <p class="kicker dark-kicker">For companies</p>
+            <h2>{{ home.corporate.title }}</h2>
+            <p>{{ home.corporate.text }}</p>
+            <ul class="plain-list">
+                {% for point in home.corporate.points %}
+                <li>{{ point }}</li>
+                {% endfor %}
+            </ul>
+            <div class="hero-actions">
+                <a href="/corporate" class="btn btn-large">Register your employees</a>
+                <a href="/contact" class="btn btn-secondary">Talk to us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vision-section">
+    <div class="container">
+        <h2 class="section-title">{{ home.founder_heading }} <span class="highlight">{{ home.founder_highlight }}</span></h2>
+        <div class="vision-content">
+            {% for paragraph in home.founder_message %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+            <p class="vision-signature">
+                <strong>— {{ home.founder_name }}</strong><br>
+                {{ home.founder_role }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="split-cta">
+    <div class="container">
+        <article class="whatsapp-panel whatsapp-panel-wide">
+            <h2>{{ home.whatsapp_panel_title }}</h2>
+            <p>{{ home.whatsapp_panel_text }}</p>
+            <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
+        </article>
+    </div>
+</section>
+{% endblock %}
