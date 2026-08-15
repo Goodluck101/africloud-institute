@@ -1,6 +1,6 @@
 import re
 
-from flask import Blueprint, abort, flash, redirect, render_template, request, send_file, url_for
+from flask import Blueprint, abort, flash, redirect, render_template, request, send_file, session, url_for
 from io import BytesIO
 
 from app.pdf import build_legal_pdf
@@ -48,6 +48,17 @@ _CONTACT_LIMITS = {
 
 def _clean(value, limit):
     return (value or "").strip()[:limit]
+
+
+def _deliver_inbox_email(subject, body, reply_to=None):
+    sent = send_inbox_email(subject, body, reply_to=reply_to)
+    if not sent:
+        session["outbound_mail"] = {
+            "subject": subject,
+            "body": body,
+            "reply_to": reply_to or "",
+        }
+    return sent
 
 
 @main.route("/")
@@ -100,7 +111,7 @@ def contact():
                 "message": form["message"],
             }
             save_contact_message(record)
-            send_inbox_email(
+            _deliver_inbox_email(
                 subject=f"Website enquiry from {form['full_name']}",
                 body="New contact message from the AfriCloud Institute website.\n\n"
                 + format_fields(
@@ -208,7 +219,7 @@ def apply():
                     "motivation": form["motivation"],
                 }
             save_application(record)
-            send_inbox_email(
+            _deliver_inbox_email(
                 subject=f"Programme application: {course['title']}",
                 body="New application from the AfriCloud Institute website.\n\n"
                 + format_fields(
@@ -293,7 +304,7 @@ def corporate():
                     "notes": form["notes"],
                 }
             save_corporate_enquiry(record)
-            send_inbox_email(
+            _deliver_inbox_email(
                 subject=f"Corporate training request: {form['company_name']}",
                 body="New corporate training request from the AfriCloud Institute website.\n\n"
                 + format_fields(
