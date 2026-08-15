@@ -20,9 +20,11 @@ from app.data import (
     get_site,
     get_testimonials,
     save_application,
+    save_contact_message,
     save_corporate_enquiry,
     utc_now_iso,
 )
+from app.mail import format_fields, send_inbox_email
 
 main = Blueprint("main", __name__)
 
@@ -35,6 +37,12 @@ _FIELD_LIMITS = {
     "city": 80,
     "experience": 80,
     "motivation": 2000,
+}
+_CONTACT_LIMITS = {
+    "full_name": 120,
+    "email": 200,
+    "phone": 40,
+    "message": 2000,
 }
 
 
@@ -66,9 +74,50 @@ def about():
     return render_template("about.html", founders=get_founders())
 
 
-@main.route("/contact")
+@main.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template("contact.html")
+    form = {key: "" for key in _CONTACT_LIMITS}
+
+    if request.method == "POST":
+        form = {key: _clean(request.form.get(key), limit) for key, limit in _CONTACT_LIMITS.items()}
+        errors = []
+        if len(form["full_name"]) < 2:
+            errors.append("Please enter your name.")
+        if not _EMAIL_RE.match(form["email"]):
+            errors.append("Please enter a valid email address.")
+        if len(form["message"]) < 8:
+            errors.append("Please write a short message.")
+
+        if errors:
+            for error in errors:
+                flash(error, "error")
+        else:
+            record = {
+                "submitted_at": utc_now_iso(),
+                "full_name": form["full_name"],
+                "email": form["email"],
+                "phone": form["phone"],
+                "message": form["message"],
+            }
+            save_contact_message(record)
+            send_inbox_email(
+                subject=f"Website enquiry from {form['full_name']}",
+                body="New contact message from the AfriCloud Institute website.\n\n"
+                + format_fields(
+                    [
+                        ("Name", record["full_name"]),
+                        ("Email", record["email"]),
+                        ("Phone", record["phone"]),
+                        ("Message", record["message"]),
+                        ("Submitted at", record["submitted_at"]),
+                    ]
+                ),
+                reply_to=form["email"],
+            )
+            flash("Thank you. Your message has been received. We will reply by email or phone.", "success")
+            return redirect(url_for("main.contact"))
+
+    return render_template("contact.html", form=form)
 
 
 @main.route("/faq")
@@ -147,8 +196,7 @@ def apply():
                 flash(error, "error")
         else:
             course = get_bootcamp(form["programme"])
-            save_application(
-                {
+            record = {
                     "submitted_at": utc_now_iso(),
                     "full_name": form["full_name"],
                     "email": form["email"],
@@ -159,6 +207,23 @@ def apply():
                     "experience": form["experience"],
                     "motivation": form["motivation"],
                 }
+            save_application(record)
+            send_inbox_email(
+                subject=f"Programme application: {course['title']}",
+                body="New application from the AfriCloud Institute website.\n\n"
+                + format_fields(
+                    [
+                        ("Name", record["full_name"]),
+                        ("Email", record["email"]),
+                        ("Phone", record["phone"]),
+                        ("City", record["city"]),
+                        ("Programme", record["programme_title"]),
+                        ("Experience", record["experience"]),
+                        ("Motivation", record["motivation"]),
+                        ("Submitted at", record["submitted_at"]),
+                    ]
+                ),
+                reply_to=form["email"],
             )
             flash(
                 "Thank you. Your application has been received. Our team will contact you by email or phone. If you have been admitted to a cohort, join the WhatsApp group from the success note on this page.",
@@ -213,8 +278,7 @@ def corporate():
             for error in errors:
                 flash(error, "error")
         else:
-            save_corporate_enquiry(
-                {
+            record = {
                     "submitted_at": utc_now_iso(),
                     "company_name": form["company_name"],
                     "contact_name": form["contact_name"],
@@ -228,6 +292,25 @@ def corporate():
                     ],
                     "notes": form["notes"],
                 }
+            save_corporate_enquiry(record)
+            send_inbox_email(
+                subject=f"Corporate training request: {form['company_name']}",
+                body="New corporate training request from the AfriCloud Institute website.\n\n"
+                + format_fields(
+                    [
+                        ("Company", record["company_name"]),
+                        ("Contact", record["contact_name"]),
+                        ("Job title", record["job_title"]),
+                        ("Email", record["email"]),
+                        ("Phone", record["phone"]),
+                        ("Team size", record["team_size"]),
+                        ("Preferred start", record["preferred_start"]),
+                        ("Programmes", record["programmes"]),
+                        ("Notes", record["notes"]),
+                        ("Submitted at", record["submitted_at"]),
+                    ]
+                ),
+                reply_to=form["email"],
             )
             flash(
                 "Thank you. We have received your corporate training request and will contact you with a proposed plan.",

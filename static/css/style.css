@@ -754,6 +754,11 @@ main {
     border-left-color: var(--whatsapp);
 }
 
+.contact-form-layout {
+    margin-top: 36px;
+    max-width: 720px;
+}
+
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

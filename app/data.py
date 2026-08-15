@@ -173,5 +173,9 @@ def save_corporate_enquiry(record):
     save_submission("corporate.json", record)
 
 
+def save_contact_message(record):
+    save_submission("contact.json", record)
+
+
 def utc_now_iso():
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()

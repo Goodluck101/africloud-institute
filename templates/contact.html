@@ -12,8 +12,12 @@
     <div class="container">
         <div class="contact-grid">
             <a class="contact-card" href="mailto:{{ site.email }}">
-                <h2>Email</h2>
+                <h2>Institute email</h2>
                 <p>{{ site.email }}</p>
+            </a>
+            <a class="contact-card" href="mailto:{{ site.applications_email }}">
+                <h2>Applications &amp; enquiries</h2>
+                <p>{{ site.applications_email }}</p>
             </a>
             <a class="contact-card" href="tel:{{ site.phone }}">
                 <h2>Phone</h2>
@@ -27,6 +31,43 @@
                 <h2>WhatsApp</h2>
                 <p>{{ site.whatsapp_label }}</p>
             </a>
+        </div>
+
+        <div class="contact-form-layout">
+            <div>
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                    <div class="flash-list">
+                        {% for category, message in messages %}
+                        <p class="flash flash-{{ category }}">{{ message }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                {% endwith %}
+
+                <form class="apply-form" method="post" action="/contact" novalidate>
+                    <h2 class="form-title">Send a message</h2>
+                    <div class="form-grid">
+                        <label>
+                            Full name
+                            <input type="text" name="full_name" value="{{ form.full_name }}" required maxlength="120">
+                        </label>
+                        <label>
+                            Email address
+                            <input type="email" name="email" value="{{ form.email }}" required maxlength="200">
+                        </label>
+                        <label>
+                            Phone number
+                            <input type="tel" name="phone" value="{{ form.phone }}" maxlength="40" placeholder="+234...">
+                        </label>
+                        <label class="form-span">
+                            Message
+                            <textarea name="message" rows="5" required maxlength="2000">{{ form.message }}</textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Send message</button>
+                </form>
+            </div>
         </div>
 
         <div class="page-actions">
