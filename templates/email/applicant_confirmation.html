@@ -1,0 +1,28 @@
+{% extends "email/base_email.html" %}
+{% block content %}
+<p style="margin:0 0 18px 0;font-size:16px;line-height:1.6;">Hi {{ first_name }},</p>
+<h1 style="margin:0 0 16px 0;font-size:24px;line-height:1.35;color:#1a2550;">We received your application</h1>
+<p style="margin:0 0 20px 0;font-size:16px;line-height:1.7;color:#445066;">
+    Thank you for applying to <strong style="color:#1a2550;">{{ programme }}</strong> at {{ site.name }}.
+</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f9fc;border-radius:14px;margin:0 0 20px 0;">
+    <tr>
+        <td style="padding:16px 18px;">
+            <p style="margin:0 0 4px 0;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#3d9b3a;font-weight:700;">Programme</p>
+            <p style="margin:0 0 12px 0;font-size:16px;font-weight:700;color:#1a2550;">{{ course.title }}</p>
+            {% if course.duration %}
+            <p style="margin:0 0 4px 0;font-size:14px;color:#445066;">Duration: {{ course.duration }}</p>
+            {% endif %}
+            {% if course.start_date %}
+            <p style="margin:0;font-size:14px;color:#445066;">Next cohort: {{ course.start_date }}</p>
+            {% endif %}
+        </td>
+    </tr>
+</table>
+<p style="margin:0 0 14px 0;font-size:16px;line-height:1.7;color:#445066;">
+    Our team will contact you by email or phone with cohort dates, fees, and next steps.
+</p>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#445066;">
+    If you are admitted, we will invite you to the cohort WhatsApp group.
+</p>
+{% endblock %}

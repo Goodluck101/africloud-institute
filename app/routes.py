@@ -1,6 +1,6 @@
 import re
 
-from flask import Blueprint, abort, flash, redirect, render_template, request, send_file, session, url_for
+from flask import Blueprint, abort, flash, redirect, render_template, request, send_file, url_for
 from io import BytesIO
 
 from app.pdf import build_legal_pdf
@@ -24,7 +24,7 @@ from app.data import (
     save_corporate_enquiry,
     utc_now_iso,
 )
-from app.mail import applicant_confirmation_text, format_fields, send_applicant_email, send_inbox_email
+from app.mail import notify_application, notify_contact, notify_corporate
 
 main = Blueprint("main", __name__)
 
@@ -48,25 +48,6 @@ _CONTACT_LIMITS = {
 
 def _clean(value, limit):
     return (value or "").strip()[:limit]
-
-
-def _deliver_inbox_email(subject, body, reply_to=None, autoresponse=None, cc=None):
-    sent = send_inbox_email(
-        subject,
-        body,
-        reply_to=reply_to,
-        autoresponse=autoresponse,
-        cc=cc,
-    )
-    if not sent:
-        session["outbound_mail"] = {
-            "subject": subject,
-            "body": body,
-            "reply_to": reply_to or "",
-            "autoresponse": autoresponse or "",
-            "cc": cc or "",
-        }
-    return sent
 
 
 @main.route("/")
@@ -119,20 +100,7 @@ def contact():
                 "message": form["message"],
             }
             save_contact_message(record)
-            _deliver_inbox_email(
-                subject=f"Website enquiry from {form['full_name']}",
-                body="New contact message from the AfriCloud Institute website.\n\n"
-                + format_fields(
-                    [
-                        ("Name", record["full_name"]),
-                        ("Email", record["email"]),
-                        ("Phone", record["phone"]),
-                        ("Message", record["message"]),
-                        ("Submitted at", record["submitted_at"]),
-                    ]
-                ),
-                reply_to=form["email"],
-            )
+            notify_contact(get_site(), record)
             flash("Thank you. Your message has been received. We will reply by email or phone.", "success")
             return redirect(url_for("main.contact"))
 
@@ -227,33 +195,7 @@ def apply():
                     "motivation": form["motivation"],
                 }
             save_application(record)
-            confirmation = applicant_confirmation_text(get_site(), record["full_name"], course)
-            confirmation_subject = f"We received your application for {course['title']}"
-            _deliver_inbox_email(
-                subject=f"Programme application: {course['title']}",
-                body="New application from the AfriCloud Institute website.\n\n"
-                + format_fields(
-                    [
-                        ("Name", record["full_name"]),
-                        ("Email", record["email"]),
-                        ("Phone", record["phone"]),
-                        ("City", record["city"]),
-                        ("Programme", record["programme_title"]),
-                        ("Experience", record["experience"]),
-                        ("Motivation", record["motivation"]),
-                        ("Submitted at", record["submitted_at"]),
-                    ]
-                ),
-                reply_to=form["email"],
-            )
-            if not send_applicant_email(form["email"], confirmation_subject, confirmation):
-                session["outbound_mail"] = {
-                    "subject": confirmation_subject,
-                    "body": confirmation,
-                    "reply_to": form["email"],
-                    "cc": form["email"],
-                    "autoresponse": confirmation,
-                }
+            notify_application(get_site(), record, course)
             flash(
                 "Thank you. Your application has been received. Our team will contact you by email or phone. If you have been admitted to a cohort, join the WhatsApp group from the success note on this page.",
                 "success",
@@ -322,25 +264,7 @@ def corporate():
                     "notes": form["notes"],
                 }
             save_corporate_enquiry(record)
-            _deliver_inbox_email(
-                subject=f"Corporate training request: {form['company_name']}",
-                body="New corporate training request from the AfriCloud Institute website.\n\n"
-                + format_fields(
-                    [
-                        ("Company", record["company_name"]),
-                        ("Contact", record["contact_name"]),
-                        ("Job title", record["job_title"]),
-                        ("Email", record["email"]),
-                        ("Phone", record["phone"]),
-                        ("Team size", record["team_size"]),
-                        ("Preferred start", record["preferred_start"]),
-                        ("Programmes", record["programmes"]),
-                        ("Notes", record["notes"]),
-                        ("Submitted at", record["submitted_at"]),
-                    ]
-                ),
-                reply_to=form["email"],
-            )
+            notify_corporate(get_site(), record)
             flash(
                 "Thank you. We have received your corporate training request and will contact you with a proposed plan.",
                 "success",

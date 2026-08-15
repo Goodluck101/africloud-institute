@@ -3,7 +3,7 @@ from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
-from flask import Flask, request, session
+from flask import Flask
 
 _ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(_ROOT / ".env")
@@ -34,14 +34,7 @@ def create_app():
         return {
             "site": get_site(),
             "current_year": datetime.now().year,
-            "outbound_mail": session.get("outbound_mail"),
         }
-
-    @application.after_request
-    def clear_outbound_mail(response):
-        if request.method == "GET":
-            session.pop("outbound_mail", None)
-        return response
 
     return application
 
