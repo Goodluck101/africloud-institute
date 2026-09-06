@@ -14,6 +14,7 @@ from app.data import (
     get_featured_bootcamps,
     get_founders,
     get_home,
+    get_impact,
     get_legal,
     get_legal_policy,
     get_security_statement,
@@ -57,6 +58,7 @@ def home():
         home=get_home(),
         featured_courses=get_featured_bootcamps(),
         testimonials=get_testimonials(),
+        impact=get_impact(),
     )
 
 
@@ -71,7 +73,7 @@ def course_list():
 
 @main.route("/about")
 def about():
-    return render_template("about.html", founders=get_founders())
+    return render_template("about.html", founders=get_founders(), impact=get_impact())
 
 
 @main.route("/contact", methods=["GET", "POST"])

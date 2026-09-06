@@ -91,6 +91,28 @@
     </div>
 </section>
 
+<section class="sdg-strip">
+    <div class="container">
+        <div class="section-heading">
+            <p class="kicker">UN Sustainable Development Goals</p>
+            <h2 class="section-title">OUR SDG ACTION <span class="highlight">DASHBOARD</span></h2>
+            <p>Full scholarships and live mentorship are how we contribute to the Global Goals — education, decent work, innovation, equality, and partnership.</p>
+        </div>
+        <div class="sdg-badge-row">
+            {% for sdg in impact.sdgs %}
+            <a class="sdg-badge" href="/about#sdg-{{ sdg.number }}" style="--sdg: {{ sdg.color }}">
+                <span>{{ sdg.number }}</span>
+                {{ sdg.short }}
+            </a>
+            {% endfor %}
+        </div>
+        <div class="page-actions">
+            <a href="/about#sdg-dashboard" class="btn btn-primary">Open the full dashboard</a>
+            <a href="/about#initiatives" class="btn btn-secondary">See our initiatives</a>
+        </div>
+    </div>
+</section>
+
 <section class="band band-white">
     <div class="container">
         <div class="section-heading">

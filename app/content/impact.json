@@ -1,0 +1,231 @@
+{
+  "hero_kicker": "Impact · UN SDGs",
+  "hero_title": "Raising African talent in service of the Global Goals.",
+  "hero_lead": "AfriCloud Institute is an NGO. Full scholarships, live mentorship, and community building are how we contribute to the United Nations Sustainable Development Goals — especially quality education, decent work, innovation, and reduced inequality.",
+  "mission": {
+    "title": "Our Mission",
+    "text": "To award full scholarships and mentor African talent in technology — so young people become job-ready professionals and entrepreneurs who can compete globally and give back at home."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "text": "An Africa where drive, not tuition, decides who launches a career in tech — and where communities grow because that talent stays, builds, and leads."
+  },
+  "agenda_note": "Our work is framed by the UN 2030 Agenda and supports the African Union’s Agenda 2063: a prosperous Africa based on inclusive growth, and a continent whose youth are skilled, employed, and entrepreneurial.",
+  "core_values": [
+    {
+      "title": "Excellence",
+      "text": "We hold a high bar for skills, teaching quality, and the work scholars produce. Job-ready means the work would stand up on a real team."
+    },
+    {
+      "title": "Equity",
+      "text": "A full scholarship is the point. Talent from across Africa — including young women and people locked out by cost — should be able to start."
+    },
+    {
+      "title": "Community",
+      "text": "We raise people together. Mentorship, peer support, and scholar communities last beyond class and fold back into African neighbourhoods and teams."
+    },
+    {
+      "title": "Innovation",
+      "text": "Curriculum stays with current tools and ways of working: cloud, DevOps, AI, cybersecurity, data, and software used in industry today."
+    },
+    {
+      "title": "Integrity",
+      "text": "Scholarships are free. Nobody should pay for a seat or a certificate. We are transparent about programmes and how we handle scholar data."
+    },
+    {
+      "title": "Partnership",
+      "text": "SDG 17 is how scale happens. We work with organisations that sponsor scholars, host internships, send mentors, and open doors to work."
+    }
+  ],
+  "goals": {
+    "kicker": "2030 horizon",
+    "title": "Our Goals",
+    "intro": "These are the outcomes we organise the NGO around. They map to the SDGs on our Action Dashboard.",
+    "entries": [
+      {
+        "title": "Remove tuition as a barrier",
+        "text": "Award full scholarships so African talent can enter Cloud, DevOps, AI, Cybersecurity, data, and software without paying course fees."
+      },
+      {
+        "title": "Make scholars job-ready",
+        "text": "Deliver live mentoring, labs, and portfolios that match what teams hire for — not theory alone."
+      },
+      {
+        "title": "Raise entrepreneurs",
+        "text": "Mentor builders who will launch and grow African ventures, not only fill roles."
+      },
+      {
+        "title": "Widen who gets in",
+        "text": "Prioritise inclusion: young people, career changers, women in tech, and learners from communities that rarely see this pathway."
+      },
+      {
+        "title": "Turn skills into work",
+        "text": "Grow a partner network that offers internships, apprenticeships, project briefs, and first roles."
+      },
+      {
+        "title": "Stay accountable",
+        "text": "Publish how our programmes contribute to the SDGs, and keep selection, classrooms, and data handling honest."
+      }
+    ]
+  },
+  "initiatives": {
+    "kicker": "How we work",
+    "title": "Our Initiatives",
+    "intro": "Five programmes, one mission: raise African communities through tech talent.",
+    "entries": [
+      {
+        "id": "scholars",
+        "title": "AfriCloud Scholars",
+        "sdgs": ["4", "10"],
+        "text": "Full scholarships for live, remote bootcamps. Every seat is funded. Scholars choose a pathway and join a cohort — no tuition, no hidden course fee."
+      },
+      {
+        "id": "mentorcircle",
+        "title": "MentorCircle",
+        "sdgs": ["4", "8"],
+        "text": "Instructor-led teaching plus mentors who stay close. The scholar WhatsApp community carries class, peer support, and accountability between sessions."
+      },
+      {
+        "id": "jobready",
+        "title": "JobReady Studio",
+        "sdgs": ["4", "8"],
+        "text": "Hands-on labs, portfolio projects, and career coaching so graduates can interview, contribute, and stay employed."
+      },
+      {
+        "id": "venturelab",
+        "title": "Venture Lab",
+        "sdgs": ["8", "9"],
+        "text": "Mentorship for scholars who will found and grow. Problem-solving, product thinking, and the discipline to ship — so Africa’s next ventures have operators, not only ideas."
+      },
+      {
+        "id": "partners",
+        "title": "Partner Alliance",
+        "sdgs": ["8", "17"],
+        "text": "Companies, NGOs, and community hosts sponsor scholars, offer internships, send mentors, or run a local circle with us."
+      }
+    ]
+  },
+  "dashboard": {
+    "kicker": "UN 2030 Agenda",
+    "title": "Our SDG Action Dashboard",
+    "intro": "AfriCloud Institute does not claim to deliver every Global Goal. We concentrate where scholarships, skills, work, and partnerships actually move the needle — and we name the targets we contribute to.",
+    "footnote": "Target language follows the United Nations Sustainable Development Goals. Our contribution is through education, mentoring, employment pathways, entrepreneurship, inclusion, and partnership — not through unaudited impact claims."
+  },
+  "sdgs": [
+    {
+      "number": "4",
+      "name": "Quality Education",
+      "short": "Education",
+      "color": "#C5192D",
+      "targets": [
+        {
+          "id": "4.3",
+          "text": "Equal access to affordable, quality technical, vocational, and tertiary education."
+        },
+        {
+          "id": "4.4",
+          "text": "Increase the number of youth and adults with relevant skills — including technical and vocational skills — for employment, decent jobs, and entrepreneurship."
+        }
+      ],
+      "action": "AfriCloud Scholars and MentorCircle award full scholarships and live vocational training in Cloud, DevOps, AI, Cybersecurity, data, and software. JobReady Studio and Venture Lab are how Target 4.4 shows up in practice: skills for jobs and for founding."
+    },
+    {
+      "number": "5",
+      "name": "Gender Equality",
+      "short": "Gender equality",
+      "color": "#FF3A21",
+      "targets": [
+        {
+          "id": "5.5",
+          "text": "Ensure women’s full and effective participation and equal opportunities in economic life."
+        },
+        {
+          "id": "5.b",
+          "text": "Enhance the use of enabling technology to promote the empowerment of women."
+        }
+      ],
+      "action": "Tech careers and founder pathways must be open to young women, not reserved for those who can pay. We recruit and mentor women into the same fully funded cohorts, and we ask partners to keep internships and apprenticeships equally accessible."
+    },
+    {
+      "number": "8",
+      "name": "Decent Work and Economic Growth",
+      "short": "Decent work",
+      "color": "#A21942",
+      "targets": [
+        {
+          "id": "8.3",
+          "text": "Promote development-oriented policies that support decent job creation, entrepreneurship, creativity, and innovation."
+        },
+        {
+          "id": "8.6",
+          "text": "Reduce the proportion of youth not in employment, education, or training."
+        }
+      ],
+      "action": "JobReady Studio prepares scholars for decent work. Venture Lab prepares them to create work. Partner Alliance connects cohorts to internships and first roles so training does not end at a certificate."
+    },
+    {
+      "number": "9",
+      "name": "Industry, Innovation and Infrastructure",
+      "short": "Innovation",
+      "color": "#FD6925",
+      "targets": [
+        {
+          "id": "9.b",
+          "text": "Support domestic technology development, research, and innovation."
+        },
+        {
+          "id": "9.c",
+          "text": "Significantly increase access to information and communications technology."
+        }
+      ],
+      "action": "Remote, Africa-first cohorts widen access to ICT skills. Venture Lab and advanced tracks (cloud, AI, security, software) build the people African industry needs to innovate, not only consume technology."
+    },
+    {
+      "number": "10",
+      "name": "Reduced Inequalities",
+      "short": "Reduced inequalities",
+      "color": "#DD1367",
+      "targets": [
+        {
+          "id": "10.2",
+          "text": "Empower and promote the social and economic inclusion of all, irrespective of origin or other status."
+        }
+      ],
+      "action": "Tuition is one of the sharpest filters in tech. Full scholarships, remote delivery, and community mentoring are how we include African talent who would otherwise be locked out of global-standard training."
+    },
+    {
+      "number": "17",
+      "name": "Partnerships for the Goals",
+      "short": "Partnerships",
+      "color": "#19486A",
+      "targets": [
+        {
+          "id": "17.17",
+          "text": "Encourage and promote effective public, public-private, and civil society partnerships."
+        }
+      ],
+      "action": "Partner Alliance is our SDG 17 mechanism: organisations sponsor seats, host internships, send mentors, and help communities run local circles. The NGO cannot raise a generation of talent alone."
+    }
+  ],
+  "change": {
+    "title": "How change happens",
+    "steps": [
+      {
+        "title": "Access",
+        "text": "A full scholarship removes the paywall."
+      },
+      {
+        "title": "Skills",
+        "text": "Live mentorship and labs build job-ready capability."
+      },
+      {
+        "title": "Work & ventures",
+        "text": "Career support and founder mentoring turn skill into income and enterprise."
+      },
+      {
+        "title": "Community",
+        "text": "Scholars stay connected and give back — the next cohort is easier to raise."
+      }
+    ]
+  }
+}

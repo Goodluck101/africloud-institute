@@ -2,56 +2,143 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <p class="kicker">About us</p>
-        <h1>About AfriCloud Institute</h1>
-        <p class="lead">
-            AfriCloud Institute is an NGO offering full scholarships to African talent who want to launch
-            and grow a career in tech. We raise communities through live mentoring in Cybersecurity, Cloud,
-            DevOps, AI, Data, Software Engineering, and related skills — so young people become job-ready
-            professionals and entrepreneurs.
-        </p>
-    </div>
-</section>
-
-<div class="about-image">
-    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=480&fit=crop"
-         alt="Students learning together">
-</div>
-
-<section class="band">
-    <div class="container">
-        <h2 class="section-title">CORE <span class="highlight">VALUES</span></h2>
-        <div class="values-grid">
-            <article class="value-card">
-                <h3>Excellence</h3>
-                <p>We hold a high bar for skills, teaching quality, and the work students produce.</p>
-            </article>
-            <article class="value-card">
-                <h3>Adaptability</h3>
-                <p>Curriculum stays aligned with current industry tools and hiring needs.</p>
-            </article>
-            <article class="value-card">
-                <h3>Community</h3>
-                <p>We raise African talent together — mentorship, peer support, and a scholar community that lasts beyond class.</p>
-            </article>
-            <article class="value-card">
-                <h3>Innovation</h3>
-                <p>Students learn current platforms, practices, and ways of working used in real teams.</p>
-            </article>
-            <article class="value-card">
-                <h3>Integrity</h3>
-                <p>Scholarships are free. We are transparent about programmes and how we handle scholar information.</p>
-            </article>
+        <p class="kicker">{{ impact.hero_kicker }}</p>
+        <h1>{{ impact.hero_title }}</h1>
+        <p class="lead">{{ impact.hero_lead }}</p>
+        <div class="hero-actions">
+            <a href="#sdg-dashboard" class="btn btn-large">SDG Action Dashboard</a>
+            <a href="#initiatives" class="btn btn-ghost">Our initiatives</a>
+            <a href="/apply" class="btn btn-ghost">Apply for a scholarship</a>
         </div>
     </div>
 </section>
 
-<div class="about-image">
-    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=480&fit=crop"
-         alt="Team collaboration">
-</div>
+<section class="band band-white" id="mission">
+    <div class="container">
+        <div class="mission-grid">
+            <article class="mission-card">
+                <p class="kicker kicker-on-light">Purpose</p>
+                <h2>{{ impact.mission.title }}</h2>
+                <p>{{ impact.mission.text }}</p>
+            </article>
+            <article class="mission-card">
+                <p class="kicker kicker-on-light">Future</p>
+                <h2>{{ impact.vision.title }}</h2>
+                <p>{{ impact.vision.text }}</p>
+            </article>
+        </div>
+        <p class="agenda-note">{{ impact.agenda_note }}</p>
+    </div>
+</section>
 
-<section class="founders-section">
+<section class="band" id="values">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">OUR CORE <span class="highlight">VALUES</span></h2>
+        </div>
+        <div class="values-grid">
+            {% for item in impact.core_values %}
+            <article class="value-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="band band-white" id="goals">
+    <div class="container">
+        <div class="section-heading">
+            <p class="kicker kicker-on-light">{{ impact.goals.kicker }}</p>
+            <h2 class="section-title">OUR <span class="highlight">GOALS</span></h2>
+            <p>{{ impact.goals.intro }}</p>
+        </div>
+        <div class="goals-grid">
+            {% for item in impact.goals.entries %}
+            <article class="goal-card">
+                <span class="goal-number">{{ "%02d"|format(loop.index) }}</span>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="band" id="initiatives">
+    <div class="container">
+        <div class="section-heading">
+            <p class="kicker kicker-on-light">{{ impact.initiatives.kicker }}</p>
+            <h2 class="section-title">OUR <span class="highlight">INITIATIVES</span></h2>
+            <p>{{ impact.initiatives.intro }}</p>
+        </div>
+        <div class="initiative-list">
+            {% for item in impact.initiatives.entries %}
+            <article class="initiative-card" id="initiative-{{ item.id }}">
+                <div class="initiative-head">
+                    <h3>{{ item.title }}</h3>
+                    <div class="sdg-chip-row">
+                        {% for num in item.sdgs %}
+                        <a class="sdg-chip" href="#sdg-{{ num }}">SDG {{ num }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <p>{{ item.text }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="band band-white" id="sdg-dashboard">
+    <div class="container">
+        <div class="section-heading">
+            <p class="kicker kicker-on-light">{{ impact.dashboard.kicker }}</p>
+            <h2 class="section-title">OUR SDG ACTION <span class="highlight">DASHBOARD</span></h2>
+            <p>{{ impact.dashboard.intro }}</p>
+        </div>
+        <div class="sdg-dashboard">
+            {% for sdg in impact.sdgs %}
+            <article class="sdg-card" id="sdg-{{ sdg.number }}" style="--sdg: {{ sdg.color }}">
+                <header class="sdg-card-head">
+                    <span class="sdg-number">{{ sdg.number }}</span>
+                    <div>
+                        <p class="sdg-label">Sustainable Development Goal</p>
+                        <h3>{{ sdg.name }}</h3>
+                    </div>
+                </header>
+                <ul class="sdg-targets">
+                    {% for target in sdg.targets %}
+                    <li><strong>{{ target.id }}</strong> {{ target.text }}</li>
+                    {% endfor %}
+                </ul>
+                <p class="sdg-action"><strong>Our action.</strong> {{ sdg.action }}</p>
+            </article>
+            {% endfor %}
+        </div>
+        <p class="agenda-note">{{ impact.dashboard.footnote }}</p>
+    </div>
+</section>
+
+<section class="band" id="change">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">HOW CHANGE <span class="highlight">HAPPENS</span></h2>
+        </div>
+        <div class="change-grid">
+            {% for item in impact.change.steps %}
+            <article class="change-card">
+                <span class="step-number">{{ "%02d"|format(loop.index) }}</span>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="founders-section" id="founders">
     <div class="container">
         <h2 class="section-title">OUR <span class="highlight">FOUNDERS</span></h2>
         <div class="founders-list">

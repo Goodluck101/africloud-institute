@@ -106,6 +106,10 @@ def get_founders():
     return _load_json("founders.json")
 
 
+def get_impact():
+    return _load_json("impact.json")
+
+
 def get_site():
     return _load_json("site.json")
 
