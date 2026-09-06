@@ -1,10 +1,10 @@
 {
   "kicker": "Scholarship programmes",
-  "title": "Fully funded pathways into tech",
-  "lead": "Every programme is a full scholarship. Live mentorship, hands-on projects, and a community that raises African talent to be job-ready — and ready to build.",
+  "title": "Fully funded. Seriously taught.",
+  "lead": "Pick a craft. We carry the tuition. Live mentors, real labs, and a community that will not let African talent stall.",
   "scholarship_note": "100% scholarship. No tuition. No hidden fees.",
-  "cta_title": "Ready to launch your tech career?",
-  "cta_text": "Apply for a full scholarship, then stay connected through email, phone, and the scholar WhatsApp community once you are admitted.",
+  "cta_title": "Your cohort is waiting. Tuition is not.",
+  "cta_text": "Apply for a full scholarship. If you are admitted, we will bring you into email, phone, and the scholar community.",
   "programmes": [
     {
       "id": "cybersecurity",

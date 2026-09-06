@@ -1,14 +1,14 @@
 {
   "hero_kicker": "Impact · UN SDGs",
-  "hero_title": "Raising African talent in service of the Global Goals.",
-  "hero_lead": "AfriCloud Institute is an NGO. Full scholarships, live mentorship, and community building are how we contribute to the United Nations Sustainable Development Goals — especially quality education, decent work, innovation, and reduced inequality.",
+  "hero_title": "We raise talent. The Global Goals get the dividend.",
+  "hero_lead": "AfriCloud Institute is an NGO. Scholarships, mentors, and community are how we contribute to the United Nations Sustainable Development Goals — quality education, decent work, innovation, equality, and partnership.",
   "mission": {
     "title": "Our Mission",
-    "text": "To award full scholarships and mentor African talent in technology — so young people become job-ready professionals and entrepreneurs who can compete globally and give back at home."
+    "text": "Award full scholarships. Mentor African talent in technology. Send them into the world job-ready — and send some of them out as founders who give back at home."
   },
   "vision": {
     "title": "Our Vision",
-    "text": "An Africa where drive, not tuition, decides who launches a career in tech — and where communities grow because that talent stays, builds, and leads."
+    "text": "An Africa where hunger beats hardship: drive, not tuition, decides who enters tech — and talent stays long enough to raise the next table."
   },
   "agenda_note": "Our work is framed by the UN 2030 Agenda and supports the African Union’s Agenda 2063: a prosperous Africa based on inclusive growth, and a continent whose youth are skilled, employed, and entrepreneurial.",
   "core_values": [
@@ -40,7 +40,7 @@
   "goals": {
     "kicker": "2030 horizon",
     "title": "Our Goals",
-    "intro": "These are the outcomes we organise the NGO around. They map to the SDGs on our Action Dashboard.",
+    "intro": "What we organise the NGO around. Each one maps to the dashboard below.",
     "entries": [
       {
         "title": "Remove tuition as a barrier",
@@ -71,7 +71,7 @@
   "initiatives": {
     "kicker": "How we work",
     "title": "Our Initiatives",
-    "intro": "Five programmes, one mission: raise African communities through tech talent.",
+    "intro": "Five doors. One promise: African talent should not stall at the fee page.",
     "entries": [
       {
         "id": "scholars",
@@ -108,7 +108,7 @@
   "dashboard": {
     "kicker": "UN 2030 Agenda",
     "title": "Our SDG Action Dashboard",
-    "intro": "AfriCloud Institute does not claim to deliver every Global Goal. We concentrate where scholarships, skills, work, and partnerships actually move the needle — and we name the targets we contribute to.",
+    "intro": "We do not pretend to deliver all 17 Goals. We go deep where scholarships and mentors actually move the needle.",
     "footnote": "Target language follows the United Nations Sustainable Development Goals. Our contribution is through education, mentoring, employment pathways, entrepreneurship, inclusion, and partnership — not through unaudited impact claims."
   },
   "sdgs": [
@@ -212,20 +212,25 @@
     "steps": [
       {
         "title": "Access",
-        "text": "A full scholarship removes the paywall."
+        "text": "A full scholarship takes the price off the table."
       },
       {
         "title": "Skills",
-        "text": "Live mentorship and labs build job-ready capability."
+        "text": "Live mentors and labs make the work real."
       },
       {
         "title": "Work & ventures",
-        "text": "Career support and founder mentoring turn skill into income and enterprise."
+        "text": "Career coaching and founder support turn skill into income — and into companies."
       },
       {
         "title": "Community",
-        "text": "Scholars stay connected and give back — the next cohort is easier to raise."
+        "text": "Scholars stay. They hold the door. The next cohort is easier to raise."
       }
     ]
+  },
+  "invite": {
+    "kicker": "The door is open",
+    "title": "Come as a scholar. Stay as a builder. Return as a mentor.",
+    "text": "This NGO is a relay. You run your leg. Then you pass the baton."
   }
 }

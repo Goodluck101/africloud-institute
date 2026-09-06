@@ -13,7 +13,13 @@
     </div>
 </section>
 
-<section class="band band-white" id="mission">
+<section class="manifesto-band manifesto-on-light">
+    <div class="container">
+        <p class="manifesto-text">Drive over tuition. Talent over postcode. Community over the classroom alone.</p>
+    </div>
+</section>
+
+<section class="band band-paper" id="mission">
     <div class="container">
         <div class="mission-grid">
             <article class="mission-card">
@@ -34,7 +40,7 @@
 <section class="band" id="values">
     <div class="container">
         <div class="section-heading">
-            <h2 class="section-title">OUR CORE <span class="highlight">VALUES</span></h2>
+            <h2 class="section-title">Core <span class="highlight">values</span></h2>
         </div>
         <div class="values-grid">
             {% for item in impact.core_values %}
@@ -51,7 +57,7 @@
     <div class="container">
         <div class="section-heading">
             <p class="kicker kicker-on-light">{{ impact.goals.kicker }}</p>
-            <h2 class="section-title">OUR <span class="highlight">GOALS</span></h2>
+            <h2 class="section-title">Our <span class="highlight">goals</span></h2>
             <p>{{ impact.goals.intro }}</p>
         </div>
         <div class="goals-grid">
@@ -70,7 +76,7 @@
     <div class="container">
         <div class="section-heading">
             <p class="kicker kicker-on-light">{{ impact.initiatives.kicker }}</p>
-            <h2 class="section-title">OUR <span class="highlight">INITIATIVES</span></h2>
+            <h2 class="section-title">Our <span class="highlight">initiatives</span></h2>
             <p>{{ impact.initiatives.intro }}</p>
         </div>
         <div class="initiative-list">
@@ -95,7 +101,7 @@
     <div class="container">
         <div class="section-heading sdg-dashboard-intro">
             <p class="kicker kicker-on-light">{{ impact.dashboard.kicker }}</p>
-            <h2 class="section-title sdg-display-title">Our SDG Action <span class="highlight">Dashboard</span></h2>
+            <h2 class="section-title sdg-display-title">SDG Action <span class="highlight">Dashboard</span></h2>
             <p>{{ impact.dashboard.intro }}</p>
         </div>
         <div class="sdg-dashboard">
@@ -124,7 +130,7 @@
 <section class="band" id="change">
     <div class="container">
         <div class="section-heading">
-            <h2 class="section-title">HOW CHANGE <span class="highlight">HAPPENS</span></h2>
+            <h2 class="section-title">How change <span class="highlight">happens</span></h2>
         </div>
         <div class="change-grid">
             {% for item in impact.change.steps %}
@@ -138,9 +144,22 @@
     </div>
 </section>
 
+<section class="invite-band" id="invite">
+    <div class="container">
+        <p class="kicker">{{ impact.invite.kicker }}</p>
+        <h2>{{ impact.invite.title }}</h2>
+        <p>{{ impact.invite.text }}</p>
+        <div class="hero-actions">
+            <a href="/apply" class="btn btn-large">Apply for a scholarship</a>
+            <a href="/corporate" class="btn btn-ghost">Partner with us</a>
+            <a href="/contact" class="btn btn-ghost">Mentor a scholar</a>
+        </div>
+    </div>
+</section>
+
 <section class="founders-section" id="founders">
     <div class="container">
-        <h2 class="section-title">OUR <span class="highlight">FOUNDERS</span></h2>
+        <h2 class="section-title">The <span class="highlight">founders</span></h2>
         <div class="founders-list">
             {% for founder in founders %}
             <article class="founder-card">

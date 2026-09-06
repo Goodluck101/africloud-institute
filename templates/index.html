@@ -5,15 +5,22 @@
         <p class="kicker">{{ home.hero_kicker }}</p>
         <h1>{{ home.hero_title }}</h1>
         <p class="hero-subtitle">{{ home.hero_subtitle }}</p>
+        <p class="hero-note">{{ home.hero_note }}</p>
         <div class="hero-actions">
             <a href="/apply" class="btn btn-large">Apply for a scholarship</a>
-            <a href="/courses" class="btn btn-ghost">View programmes</a>
-            <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
+            <a href="/courses" class="btn btn-ghost">See the pathways</a>
+            <a href="/about#sdg-dashboard" class="btn btn-ghost">Our impact</a>
         </div>
     </div>
 </section>
 
-<section class="band band-white">
+<section class="manifesto-band">
+    <div class="container">
+        <p class="manifesto-text">{{ home.manifesto }}</p>
+    </div>
+</section>
+
+<section class="band band-paper">
     <div class="container">
         <div class="promise-grid">
             {% for item in home.promises %}
@@ -29,8 +36,26 @@
 <section class="band">
     <div class="container">
         <div class="section-heading">
-            <h2 class="section-title">HOW IT <span class="highlight">WORKS</span></h2>
-            <p>From scholarship application to a job-ready, builder-ready cohort.</p>
+            <p class="kicker kicker-on-light">{{ home.why.kicker }}</p>
+            <h2 class="section-title">{{ home.why.title }}</h2>
+            <p>{{ home.why.intro }}</p>
+        </div>
+        <div class="why-grid">
+            {% for item in home.why.entries %}
+            <article class="why-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="band band-paper">
+    <div class="container">
+        <div class="section-heading">
+            <h2 class="section-title">{{ home.how_heading }}</h2>
+            <p>{{ home.how_intro }}</p>
         </div>
         <div class="steps-grid">
             {% for item in home.how_it_works %}
@@ -44,7 +69,7 @@
     </div>
 </section>
 
-<section class="band band-white">
+<section class="band">
     <div class="container">
         <div class="section-heading">
             <h2 class="section-title">{{ home.featured_heading }} <span class="highlight">{{ home.featured_highlight }}</span></h2>
@@ -70,15 +95,15 @@
             {% endfor %}
         </div>
         <div class="page-actions">
-            <a href="/courses" class="btn btn-primary">See all programmes</a>
+            <a href="/courses" class="btn btn-primary">See all pathways</a>
         </div>
     </div>
 </section>
 
-<section class="band">
+<section class="band band-paper">
     <div class="container">
         <div class="section-heading">
-            <h2 class="section-title">WHO IT'S <span class="highlight">FOR</span></h2>
+            <h2 class="section-title">Who we <span class="highlight">raise</span></h2>
         </div>
         <div class="audience-grid">
             {% for item in home.audiences %}
@@ -91,12 +116,31 @@
     </div>
 </section>
 
+<section class="band" id="join">
+    <div class="container">
+        <div class="section-heading">
+            <p class="kicker kicker-on-light">{{ home.ways.kicker }}</p>
+            <h2 class="section-title">{{ home.ways.title }}</h2>
+            <p>{{ home.ways.intro }}</p>
+        </div>
+        <div class="ways-grid">
+            {% for item in home.ways.entries %}
+            <a class="way-card" href="{{ item.href }}">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+                <span>{{ item.label }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <section class="sdg-strip">
     <div class="container">
         <div class="section-heading">
             <p class="kicker">UN Sustainable Development Goals</p>
-            <h2 class="section-title">OUR SDG ACTION <span class="highlight">DASHBOARD</span></h2>
-            <p>Full scholarships and live mentorship are how we contribute to the Global Goals — education, decent work, innovation, equality, and partnership.</p>
+            <h2 class="section-title sdg-display-title">Action, not a logo wall.</h2>
+            <p>Scholarships and mentors are how we show up for education, decent work, innovation, equality, and partnership.</p>
         </div>
         <div class="sdg-badge-row">
             {% for sdg in impact.sdgs %}
@@ -107,17 +151,17 @@
             {% endfor %}
         </div>
         <div class="page-actions">
-            <a href="/about#sdg-dashboard" class="btn btn-primary">Open the full dashboard</a>
-            <a href="/about#initiatives" class="btn btn-secondary">See our initiatives</a>
+            <a href="/about#sdg-dashboard" class="btn btn-primary">Open the dashboard</a>
+            <a href="/about#initiatives" class="btn btn-secondary">See initiatives</a>
         </div>
     </div>
 </section>
 
-<section class="band band-white">
+<section class="band band-paper">
     <div class="container">
         <div class="section-heading">
-            <h2 class="section-title">WHAT LEARNERS <span class="highlight">SAY</span></h2>
-            <p>Voices from scholars we have mentored into tech careers and ventures.</p>
+            <h2 class="section-title">{{ home.voices_heading }} <span class="highlight">{{ home.voices_highlight }}</span></h2>
+            <p>{{ home.voices_intro }}</p>
         </div>
         <div class="testimonial-grid">
             {% for item in testimonials %}
@@ -131,6 +175,12 @@
             </figure>
             {% endfor %}
         </div>
+    </div>
+</section>
+
+<section class="pull-quote-band">
+    <div class="container">
+        <blockquote class="pull-quote">{{ home.pull_quote }}</blockquote>
     </div>
 </section>
 
