@@ -91,29 +91,29 @@
     </div>
 </section>
 
-<section class="band band-white" id="sdg-dashboard">
+<section class="sdg-dashboard-band" id="sdg-dashboard">
     <div class="container">
-        <div class="section-heading">
+        <div class="section-heading sdg-dashboard-intro">
             <p class="kicker kicker-on-light">{{ impact.dashboard.kicker }}</p>
-            <h2 class="section-title">OUR SDG ACTION <span class="highlight">DASHBOARD</span></h2>
+            <h2 class="section-title sdg-display-title">Our SDG Action <span class="highlight">Dashboard</span></h2>
             <p>{{ impact.dashboard.intro }}</p>
         </div>
         <div class="sdg-dashboard">
             {% for sdg in impact.sdgs %}
             <article class="sdg-card" id="sdg-{{ sdg.number }}" style="--sdg: {{ sdg.color }}">
                 <header class="sdg-card-head">
-                    <span class="sdg-number">{{ sdg.number }}</span>
+                    <span class="sdg-number" aria-hidden="true">{{ sdg.number }}</span>
                     <div>
-                        <p class="sdg-label">Sustainable Development Goal</p>
+                        <p class="sdg-label">Goal {{ sdg.number }}</p>
                         <h3>{{ sdg.name }}</h3>
                     </div>
                 </header>
-                <ul class="sdg-targets">
+                <div class="sdg-target-pills">
                     {% for target in sdg.targets %}
-                    <li><strong>{{ target.id }}</strong> {{ target.text }}</li>
+                    <span title="{{ target.text }}">{{ target.id }}</span>
                     {% endfor %}
-                </ul>
-                <p class="sdg-action"><strong>Our action.</strong> {{ sdg.action }}</p>
+                </div>
+                <p class="sdg-action">{{ sdg.action }}</p>
             </article>
             {% endfor %}
         </div>

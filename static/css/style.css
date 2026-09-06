@@ -1268,6 +1268,7 @@ main {
     .courses-cta,
     .corporate-band,
     .sdg-strip,
+    .sdg-dashboard-band,
     .site-footer {
         padding-left: 20px;
         padding-right: 20px;
@@ -1427,71 +1428,117 @@ main {
     color: var(--green);
 }
 
+.sdg-dashboard-band {
+    background: #f6f4ef;
+    padding: 80px 40px;
+}
+
+.sdg-dashboard-intro {
+    max-width: 640px;
+}
+
+.sdg-display-title {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 650;
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+
 .sdg-dashboard {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 18px;
 }
 
 .sdg-card {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 0 0 22px 0;
-    box-shadow: var(--shadow);
+    background: #fff;
+    background: color-mix(in srgb, var(--sdg, var(--navy)) 8%, #fff);
+    border: none;
+    border-radius: 20px;
+    padding: 26px 26px 24px;
+    box-shadow: none;
     overflow: hidden;
-    border-top: 6px solid var(--sdg, var(--navy));
+    position: relative;
+}
+
+.sdg-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    bottom: 18px;
+    width: 4px;
+    border-radius: 999px;
+    background: var(--sdg, var(--navy));
 }
 
 .sdg-card-head {
     display: flex;
     gap: 16px;
     align-items: center;
-    padding: 20px 22px 8px;
+    padding: 0 0 0 10px;
 }
 
 .sdg-number {
     flex-shrink: 0;
-    width: 52px;
-    height: 52px;
-    border-radius: 12px;
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
     background: var(--sdg, var(--navy));
     color: var(--white);
-    font-weight: 700;
-    font-size: 1.35rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 650;
+    font-size: 1.7rem;
+    line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: -0.03em;
 }
 
 .sdg-label {
     margin: 0;
-    font-size: 0.72em;
-    letter-spacing: 0.08em;
+    font-size: 0.7em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--muted);
+    color: color-mix(in srgb, var(--sdg, var(--navy)) 75%, #1a2550);
     font-weight: 700;
 }
 
 .sdg-card h3 {
-    margin: 2px 0 0 0;
-    color: var(--navy);
-    font-size: 1.15rem;
+    margin: 4px 0 0 0;
+    color: var(--navy-dark);
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 650;
+    font-size: 1.35rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
-.sdg-targets {
-    margin: 8px 22px 12px;
-    padding: 0 0 0 18px;
-    color: var(--text);
+.sdg-target-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 18px 0 14px 10px;
 }
 
-.sdg-targets li {
-    margin: 0 0 8px 0;
+.sdg-target-pills span {
+    font-size: 0.72em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--sdg, var(--navy));
+    background: color-mix(in srgb, var(--sdg, var(--navy)) 12%, #fff);
+    border-radius: 999px;
+    padding: 4px 10px;
 }
 
 .sdg-action {
-    margin: 0 22px;
-    color: var(--text);
+    margin: 0 0 0 10px;
+    padding-top: 14px;
+    border-top: 1px solid color-mix(in srgb, var(--sdg, var(--navy)) 18%, transparent);
+    color: #3d4658;
+    font-size: 0.95em;
     line-height: 1.65;
 }
 
