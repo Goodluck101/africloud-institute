@@ -10,23 +10,13 @@
     ]
   },
   {
-    "name": "Engr. Casmir C. Nguzoro",
+    "name": "Godsall Chibuike Adiole, MBA",
     "title": "Co-Founder",
-    "image": "/static/images/founders/casmir-nguzoro.jpg",
+    "image": "/static/images/founders/godsall-adiole.jpg",
     "bio": [
-      "Engr. Casmir C. Nguzoro is a Nigerian technology professional, cybersecurity advocate, and social impact leader with a strong focus on digital innovation, public awareness, and youth development. He is the Co-Founder of AfriCloud Institute, where he contributes to building digital skills, cybersecurity awareness, and technology capacity for individuals and organizations.",
-      "He is also the Founder of the United Network Against Violence and Abuse (UNAVA), a youth-focused social initiative committed to combating rape, drug abuse, and cultism, while actively supporting access to education for children through advocacy, sensitization, and community outreach programs.",
-      "With experience in cybersecurity awareness, financial fraud prevention, and digital safety education, Engr. Nguzoro has led and supported initiatives aimed at protecting youths and communities from digital and social risks. His work aligns strongly with the United Nations Sustainable Development Goals, particularly in the areas of quality education, good health and well-being, and peace and justice."
-    ]
-  },
-  {
-    "name": "Constantine Ukah",
-    "title": "Co-Founder",
-    "image": "/static/images/founders/constantine-ukah.jpg",
-    "bio": [
-      "Constantine Ukah is a cybersecurity professional and cloud security engineer with expertise in securing scalable cloud infrastructures across AWS and Google Cloud Platform (GCP). He has hands-on experience in cloud security, identity and access management, Infrastructure as Code (IaC), and DevSecOps practices, helping organizations build and maintain secure cloud environments.",
-      "Driven by a passion for cybersecurity and continuous learning, Constantine actively contributes to the technology community through technical research, security write-ups, and knowledge sharing. His work focuses on cloud security, threat prevention, access governance, and secure infrastructure design.",
-      "He is committed to advancing secure cloud adoption and helping professionals and organizations strengthen their security posture through practical, real-world security engineering and best practices."
+      "Godsall Chibuike Adiole, MBA is a SAP Cybersecurity and GRC Architect with more than nine years of leadership in SAP S/4HANA cybersecurity, full-cycle GRC implementations, and strategic security role design. He specialises in access risk management, segregation of duties, privileged access governance, and SAP BTP security, including IAS/IPS, SAML, and SSO across hybrid environments.",
+      "He has delivered SAP GRC Access Control, role redesign, and security architecture for organisations including the African Development Bank Group, Boehringer Ingelheim, and Infotech Risks Security LLC. His work spans SAP Enterprise Threat Detection, Fiori and S/4HANA authorisations, and Cloud Identity Services. He holds an Executive MBA from Quantic School of Business and Technology and an MBA in Cybersecurity from Nexford University.",
+      "He is a Co-Founder of AfriCloud Institute, where he brings enterprise SAP security, GRC, and cybersecurity practice into the institute's curriculum, mentorship, and training standards."
     ]
   }
 ]
