@@ -2,9 +2,9 @@
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <p class="kicker">Enrolment</p>
-        <h1>Apply Now</h1>
-        <p class="lead">Choose a programme and send your details. We will contact you with cohort dates, fees, and next steps.</p>
+        <p class="kicker">Full scholarships</p>
+        <h1>Apply for a scholarship</h1>
+        <p class="lead">Choose a programme and tell us your story. Every seat is fully funded. We will contact you with cohort dates and next steps.</p>
     </div>
 </section>
 
@@ -61,7 +61,7 @@
                     </label>
                     <label class="form-span">
                         Why this programme?
-                        <textarea name="motivation" rows="5" maxlength="2000" placeholder="Tell us your goals, preferred schedule, or anything we should know.">{{ form.motivation }}</textarea>
+                        <textarea name="motivation" rows="5" maxlength="2000" placeholder="Tell us your goals, your community, and whether you are aiming for a job, a venture, or both.">{{ form.motivation }}</textarea>
                     </label>
                 </div>
 
@@ -77,19 +77,19 @@
                     </span>
                 </label>
 
-                <button type="submit" class="btn btn-primary btn-large">Submit application</button>
+                <button type="submit" class="btn btn-primary btn-large">Submit scholarship application</button>
             </form>
         </div>
 
         <aside class="apply-aside">
             <h2>After you apply</h2>
             <ol>
-                <li>We review your form and reach you by email or phone.</li>
-                <li>You confirm fees, schedule, and payment plan.</li>
-                <li>Admitted learners join the cohort WhatsApp group for class updates.</li>
+                <li>We review your scholarship application and reach you by email or phone.</li>
+                <li>If selected, we confirm your cohort, schedule, and full scholarship.</li>
+                <li>Admitted scholars join the WhatsApp community for class updates.</li>
             </ol>
             <a class="btn btn-whatsapp" href="{{ site.whatsapp_group }}" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
-            <p class="aside-note">The group is for enrolled cohort members. Apply first if you are not yet admitted.</p>
+            <p class="aside-note">The group is for admitted scholars. Apply first if you are not yet selected.</p>
         </aside>
     </div>
 </section>

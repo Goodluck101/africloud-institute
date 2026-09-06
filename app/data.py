@@ -81,12 +81,12 @@ def get_courses_page():
     data = _load_json("bootcamps.json")
     if isinstance(data, list):
         return {
-            "kicker": "Bootcamps",
-            "title": "Professional training programmes",
-            "lead": "Industry-relevant skills, instructor-led teaching, and hands-on projects.",
-            "payment_note": "Flexible monthly payment plans available. Terms & conditions apply.",
-            "cta_title": "Ready for the next cohort?",
-            "cta_text": "Apply for a programme, then stay connected through email, phone, and the cohort WhatsApp group once you are admitted.",
+            "kicker": "Scholarship programmes",
+            "title": "Fully funded pathways into tech",
+            "lead": "Every programme is a full scholarship. Live mentorship, hands-on projects, and a community that raises African talent.",
+            "scholarship_note": "100% scholarship. No tuition. No hidden fees.",
+            "cta_title": "Ready to launch your tech career?",
+            "cta_text": "Apply for a full scholarship, then stay connected through email, phone, and the scholar WhatsApp community once you are admitted.",
             "programmes": data,
         }
     return data

@@ -33,10 +33,10 @@
             {% endwith %}
 
             <form class="apply-form" method="post" action="/corporate" novalidate>
-                <h2 class="form-title">Register your employees</h2>
+                <h2 class="form-title">{{ corporate.form_title }}</h2>
                 <div class="form-grid">
                     <label>
-                        Company name
+                        Organisation / company name
                         <input type="text" name="company_name" value="{{ form.company_name }}" required maxlength="160">
                     </label>
                     <label>
@@ -56,9 +56,9 @@
                         <input type="tel" name="phone" value="{{ form.phone }}" required maxlength="40">
                     </label>
                     <label>
-                        Team size
+                        How many people can you involve?
                         <select name="team_size">
-                            <option value="">Select headcount</option>
+                            <option value="">Select one</option>
                             {% for size in corporate.team_sizes %}
                             <option value="{{ size }}" {% if form.team_size == size %}selected{% endif %}>{{ size }}</option>
                             {% endfor %}
@@ -79,7 +79,7 @@
                     </fieldset>
                     <label class="form-span">
                         Notes
-                        <textarea name="notes" rows="4" maxlength="2000" placeholder="Time zone, private cohort, billing contact, or anything we should know.">{{ form.notes }}</textarea>
+                        <textarea name="notes" rows="4" maxlength="2000" placeholder="{{ corporate.notes_placeholder }}">{{ form.notes }}</textarea>
                     </label>
                 </div>
                 <label class="consent-row">
@@ -91,7 +91,7 @@
                         <a href="/legal/terms">Terms and Conditions</a>.
                     </span>
                 </label>
-                <button type="submit" class="btn btn-primary btn-large">Send request</button>
+                <button type="submit" class="btn btn-primary btn-large">{{ corporate.form_cta }}</button>
             </form>
         </div>
     </div>

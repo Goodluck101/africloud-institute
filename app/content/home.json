@@ -1,78 +1,78 @@
 {
-  "hero_kicker": "Instructor-led training",
-  "hero_title": "Build job-ready Cloud, DevOps, AI and Cybersecurity skills.",
-  "hero_subtitle": "Instructor-led Cloud, DevOps, AI and Cybersecurity training — live and remote for learners worldwide.",
+  "hero_kicker": "A nonprofit for African talent",
+  "hero_title": "Full scholarships to launch and grow a career in tech.",
+  "hero_subtitle": "AfriCloud Institute is an NGO raising African communities. We mentor young people in Cloud, DevOps, AI, Cybersecurity, and more — so they become job-ready professionals and entrepreneurs.",
   "how_it_works": [
     {
       "step": "01",
       "title": "Apply",
-      "text": "Choose a programme and send your details through Apply Now. It takes a few minutes."
+      "text": "Tell us your story and the pathway you want. A scholarship application takes a few minutes."
     },
     {
       "step": "02",
-      "title": "Enrol",
-      "text": "We confirm your cohort, fees, schedule, and payment plan by email or phone."
+      "title": "Get selected",
+      "text": "We review applications, confirm your cohort, and award a full scholarship — tuition-free."
     },
     {
       "step": "03",
-      "title": "Learn together",
-      "text": "Join instructor-led sessions, labs, and the cohort WhatsApp group for class updates and support."
+      "title": "Learn, build, launch",
+      "text": "Live mentorship, labs, and a community that prepares you for jobs and for building your own venture."
     }
   ],
   "promises": [
     {
-      "title": "Instructor-led",
-      "text": "Live teaching and mentorship, not recordings alone."
+      "title": "Full scholarships",
+      "text": "Every seat is fully funded. No tuition. No hidden course fees."
     },
     {
-      "title": "Hands-on labs",
-      "text": "Projects that match what teams actually do at work."
+      "title": "Live mentorship",
+      "text": "Instructor-led teaching and mentors who stay with you beyond the classroom."
     },
     {
-      "title": "Career support",
-      "text": "Portfolio guidance and job-readiness where the programme includes it."
+      "title": "Job-ready skills",
+      "text": "Hands-on projects that match what teams actually hire for."
     },
     {
-      "title": "Flexible payment",
-      "text": "Monthly plans are available. Terms and conditions apply."
+      "title": "Build to launch",
+      "text": "We raise talent to work in tech — and to start, lead, and grow African ventures."
     }
   ],
   "audiences": [
     {
+      "title": "Young African talent",
+      "text": "Start a tech career with structured mentoring, a portfolio, and a community that believes in you."
+    },
+    {
       "title": "Career changers",
-      "text": "Move into tech with a structured path, mentorship, and portfolio projects."
+      "text": "Move into Cloud, DevOps, security, data, or software without a tuition barrier."
     },
     {
-      "title": "Working professionals",
-      "text": "Add cloud, DevOps, security, or data skills without putting your career on hold."
-    },
-    {
-      "title": "Teams and employers",
-      "text": "Register staff for live remote cohorts, or ask us for a private group for your company."
+      "title": "Partners and communities",
+      "text": "Sponsor scholars, host internships, or help us raise the next generation of African builders."
     }
   ],
-  "featured_heading": "FEATURED",
+  "featured_heading": "SCHOLARSHIP",
   "featured_highlight": "PROGRAMMES",
-  "featured_intro": "A snapshot of current bootcamps. See the full catalogue for dates and fees.",
+  "featured_intro": "Live, remote pathways into tech. Every programme is a full scholarship.",
   "corporate": {
-    "title": "Corporate training",
-    "text": "Register your employees for live remote programmes in cybersecurity, cloud, DevOps, data, and software engineering. One form. We reply with a cohort plan and fees.",
+    "title": "Partner with AfriCloud",
+    "text": "Help us raise African talent. Organisations can sponsor scholars, offer internships, mentor a cohort, or host a community programme — so more young people become job-ready and entrepreneurial.",
     "points": [
-      "Private or mixed cohorts for your team",
-      "Live instruction, labs, and mentorship",
-      "Progress updates for the sponsoring manager"
+      "Sponsor a scholar or an entire cohort",
+      "Offer internships, apprenticeships, or mentorship",
+      "Build with us in communities across Africa"
     ]
   },
   "founder_heading": "FOUNDER'S",
   "founder_highlight": "MESSAGE",
   "founder_message": [
-    "At AfriCloud Institute, our vision is to build a new generation of highly skilled, globally competitive technology professionals from Africa. We believe that access to practical, industry-relevant training should not be limited by geography, background, or prior exposure. Technology is one of the strongest tools for economic empowerment, and our mission is to make that opportunity accessible to all who are willing to learn and grow.",
-    "As a practitioner in cybersecurity, cloud computing, and DevOps, I have seen firsthand the gap between theoretical knowledge and real-world industry expectations. AfriCloud Institute was founded to bridge that gap, by focusing on hands-on learning, real project experience, and mentorship aligned with current global standards.",
-    "Our training programs are designed not just to teach tools, but to develop problem-solvers, critical thinkers, and professionals who can confidently contribute in modern tech environments. We are committed to excellence, integrity, and continuous innovation, while nurturing talent that can compete and collaborate on a global scale.",
-    "AfriCloud Institute is more than a training platform; it is a community dedicated to growth, impact, and the future of technology in Africa."
+    "AfriCloud Institute exists to raise African talent. We are an NGO, not a paywall. We believe a young person with drive should not lose a tech career — or a chance to build — because they cannot pay tuition.",
+    "Our work is community work: identify promising people, award full scholarships, and mentor them in Cloud, DevOps, AI, Cybersecurity, and related skills until they are job-ready professionals and entrepreneurs who can compete globally and give back at home.",
+    "As practitioners, we have seen the gap between theory and what teams actually hire for. AfriCloud was founded to close that gap with live teaching, real projects, and mentors who stay close to the learner.",
+    "This is more than a classroom. It is a movement to grow African communities through technology — one scholar, one cohort, one venture at a time."
   ],
   "founder_name": "Goodluck Adiole",
   "founder_role": "Co-Founder, AfriCloud Institute",
   "whatsapp_panel_title": "Stay close to your cohort",
-  "whatsapp_panel_text": "Class reminders, session links, and peer support live in the AfriCloud Institute WhatsApp group for admitted learners."
+  "whatsapp_panel_text": "Class reminders, session links, and peer support live in the AfriCloud Institute WhatsApp community for admitted scholars."
 }

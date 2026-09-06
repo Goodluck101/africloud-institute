@@ -58,16 +58,16 @@ def applicant_confirmation_text(site, name, course):
     lines = [
         f"Hi {first_name},",
         "",
-        f"Thank you for applying to {programme} at {institute}.",
+        f"Thank you for applying for a scholarship to {programme} at {institute}.",
         "",
-        "We have received your application. Our team will contact you by email or phone with cohort dates, fees, and next steps.",
+        "We have received your application. Our team will contact you by email or phone with cohort dates, scholarship confirmation, and next steps.",
     ]
     if start:
         lines.extend(["", f"The next cohort is currently listed as starting {start}."])
     lines.extend(
         [
             "",
-            "If you are admitted, we will invite you to the cohort WhatsApp group.",
+            "If you are admitted, we will invite you to the scholar WhatsApp community.",
             "",
             institute,
             contact_email,
@@ -83,7 +83,7 @@ def _applicant_confirmation_html(site, name, course):
     programme = f"{title} ({duration})" if duration else title
     return render_template(
         "email/applicant_confirmation.html",
-        subject=f"We received your application for {title}",
+        subject=f"We received your scholarship application for {title}",
         site=site,
         logo_url=_logo_url(site),
         first_name=_first_name(name),
@@ -140,19 +140,19 @@ def notify_application(site, record, course):
         ("Motivation", record.get("motivation")),
         ("Submitted at", record.get("submitted_at")),
     ]
-    staff_subject = f"Programme application: {course.get('title', '')}"
-    staff_text = "New application from the AfriCloud Institute website.\n\n" + format_fields(rows)
+    staff_subject = f"Scholarship application: {course.get('title', '')}"
+    staff_text = "New scholarship application from the AfriCloud Institute website.\n\n" + format_fields(rows)
     staff_html = _staff_notice_html(
         site,
-        "New application",
-        course.get("title", "Programme application"),
-        "A learner submitted an application on the website.",
+        "New scholarship",
+        course.get("title", "Scholarship application"),
+        "Someone applied for a full scholarship on the website.",
         rows,
         staff_subject,
     )
     send_inbox_email(staff_subject, staff_text, reply_to=record.get("email"), html=staff_html)
 
-    confirm_subject = f"We received your application for {course.get('title', 'your programme')}"
+    confirm_subject = f"We received your scholarship application for {course.get('title', 'your programme')}"
     confirm_text = applicant_confirmation_text(site, record.get("full_name"), course)
     confirm_html = _applicant_confirmation_html(site, record.get("full_name"), course)
     return send_applicant_email(record.get("email"), confirm_subject, confirm_text, html=confirm_html)
@@ -195,13 +195,13 @@ def notify_corporate(site, record):
         ("Notes", record.get("notes")),
         ("Submitted at", record.get("submitted_at")),
     ]
-    subject = f"Corporate training request: {record.get('company_name', '')}"
-    text = "New corporate training request from the AfriCloud Institute website.\n\n" + format_fields(rows)
+    subject = f"Partnership request: {record.get('company_name', '')}"
+    text = "New partnership request from the AfriCloud Institute website.\n\n" + format_fields(rows)
     html = _staff_notice_html(
         site,
-        "Corporate training",
-        record.get("company_name", "Corporate request"),
-        "A company submitted a training request on the website.",
+        "Partnership",
+        record.get("company_name", "Partnership request"),
+        "An organisation submitted a partnership request on the website.",
         rows,
         subject,
     )

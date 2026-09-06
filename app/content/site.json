@@ -1,11 +1,12 @@
 {
   "name": "AfriCloud Institute",
+  "tagline": "Full scholarships for African talent in tech.",
   "email": "info@africloudinstitute.com",
   "applications_email": "africloudinstitute@gmail.com",
   "phone": "+2347062671393",
   "phone_display": "+234 706 267 1393",
-  "location": "Remote · Worldwide",
+  "location": "Africa · Remote",
   "logo": "/static/images/logo.jpg",
   "whatsapp_group": "https://chat.whatsapp.com/LO7g65a7E6v6oAsMRKKiDl",
-  "whatsapp_label": "Join the cohort WhatsApp group"
+  "whatsapp_label": "Join the scholar WhatsApp community"
 }

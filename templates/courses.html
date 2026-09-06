@@ -6,7 +6,7 @@
         <h1>{{ page.title }}</h1>
         <p class="lead">{{ page.lead }}</p>
         <div class="hero-actions">
-            <a href="/apply" class="btn btn-large">Apply Now</a>
+            <a href="/apply" class="btn btn-large">Apply for a scholarship</a>
             <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
         </div>
     </div>
@@ -39,11 +39,8 @@
                         <strong>{{ course.schedule }}</strong>
                     </div>
                     <div>
-                        <span>Fee</span>
-                        <strong>
-                            <s>{{ course.original_price }}</s>
-                            {{ course.price }}
-                        </strong>
+                        <span>Scholarship</span>
+                        <strong>100% funded</strong>
                     </div>
                 </div>
 
@@ -55,9 +52,9 @@
                 </ul>
 
                 <div class="course-foot">
-                    <p class="payment-info">{{ page.payment_note }}</p>
+                    <p class="payment-info">{{ page.scholarship_note }}</p>
                     <div class="course-actions">
-                        <a href="/apply?programme={{ course.id }}" class="btn btn-primary">Apply Now</a>
+                        <a href="/apply?programme={{ course.id }}" class="btn btn-primary">Apply for a scholarship</a>
                         <a href="/faq" class="btn btn-secondary">Questions</a>
                     </div>
                 </div>
@@ -72,7 +69,7 @@
         <h2>{{ page.cta_title }}</h2>
         <p>{{ page.cta_text }}</p>
         <div class="hero-actions center-actions">
-            <a href="/apply" class="btn btn-large">Apply Now</a>
+            <a href="/apply" class="btn btn-large">Apply for a scholarship</a>
             <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
         </div>
     </div>

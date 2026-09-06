@@ -1,26 +1,29 @@
 {
-  "kicker": "For companies",
-  "title": "Corporate training",
-  "lead": "Register your employees for live, remote programmes. We train teams worldwide in cybersecurity, cloud, DevOps, data, AI, and software engineering.",
+  "kicker": "For organisations",
+  "title": "Partner with AfriCloud Institute",
+  "lead": "Help us raise African talent. Sponsor scholars, mentor a cohort, host internships, or build a community programme with us — so more young people become job-ready professionals and entrepreneurs.",
+  "form_title": "Start a partnership",
+  "form_cta": "Send partnership request",
+  "notes_placeholder": "How you would like to help: scholar sponsorship, internships, mentorship, community hosting, or anything we should know.",
   "benefits": [
     {
-      "title": "Live, not leftover videos",
-      "text": "Your staff join instructor-led sessions and labs, with the same standard we use for public cohorts."
+      "title": "Sponsor a scholar",
+      "text": "Fund a seat on a live cohort. Your support covers training and mentoring so talent is never blocked by tuition."
     },
     {
-      "title": "Fit your headcount",
-      "text": "Place people on an upcoming cohort, or ask for a private group if you have a larger team and a preferred calendar."
+      "title": "Open doors to work",
+      "text": "Offer internships, apprenticeships, or project briefs. Scholars need real work to become job-ready."
     },
     {
-      "title": "Clear next steps",
-      "text": "After you submit this form we confirm programmes, dates, fees, and a single billing contact by email or phone."
+      "title": "Grow communities",
+      "text": "Host a local circle, send mentors, or co-run a programme. We raise talent together, not in isolation."
     }
   ],
   "team_sizes": [
-    "1–4 people",
+    "Just exploring",
+    "1–4 people we can involve",
     "5–10 people",
     "11–25 people",
-    "26–50 people",
-    "50+ people"
+    "26+ people / a full cohort"
   ]
 }

@@ -1,23 +1,23 @@
 [
   {
-    "question": "Who can apply for AfriCloud Institute programmes?",
-    "answer": "Our bootcamps are open to working professionals, career changers, graduates, and motivated beginners. Some programmes (such as cybersecurity, DevOps, and cloud security) are easier if you already have basic computer literacy. If you are unsure, apply and tell us your background — we will advise you on the best starting point."
+    "question": "Who can apply for a scholarship?",
+    "answer": "AfriCloud Institute is an NGO for African talent who want to launch or grow a career in tech — including motivated beginners, graduates, career changers, and young people building toward employment or entrepreneurship. Some programmes (such as cybersecurity, DevOps, and cloud) are easier with basic computer literacy. If you are unsure, apply and tell us your background — we will advise you on the best starting point."
   },
   {
-    "question": "How do I apply for a programme?",
-    "answer": "Use the Apply Now page, choose the programme you want, and submit your details. You can also start from the Bootcamps page using Apply Now on a specific course. After you apply, our team will contact you by email or phone with next steps, payment options, and the start date."
+    "question": "How do I apply?",
+    "answer": "Use the Apply Now page, choose the programme you want, and submit your details. You can also start from the Bootcamps page. After you apply, our team will contact you by email or phone with next steps, scholarship confirmation, and the start date."
   },
   {
-    "question": "What is the cohort WhatsApp group for?",
-    "answer": "Admitted students join the AfriCloud Institute cohort WhatsApp group for class announcements, session reminders, and peer support. The group is for enrolled learners. Apply first; we will guide you on when to join. Please keep group conversations professional and never share lab credentials or personal data in the chat."
+    "question": "Is the training really free?",
+    "answer": "Yes. Every programme is a full scholarship. There is no tuition and no course price listed because scholars do not pay to enrol. Beware of anyone who asks you for unofficial cash or a private transfer in exchange for a seat or a certificate — report that through our Whistle Blowing Policy."
+  },
+  {
+    "question": "What is the WhatsApp community for?",
+    "answer": "Admitted scholars join the AfriCloud Institute WhatsApp group for class announcements, session reminders, and peer support. Apply first; we will guide you on when to join. Please keep conversations professional and never share lab credentials or personal data in the chat."
   },
   {
     "question": "Are classes online, on-site, or both?",
-    "answer": "Training is live and remote for learners worldwide. If your company needs a private cohort or a specific time zone, note that on the Corporate training form or in your application."
-  },
-  {
-    "question": "How much do programmes cost and can I pay in instalments?",
-    "answer": "Current prices are listed on each programme card. Where a discounted price is shown next to an original price, the discounted fee is what you pay for that cohort. Flexible monthly payment plans are available; terms and conditions apply. We will confirm the exact amount and schedule when we contact you."
+    "answer": "Training is live and remote, Africa-first, so talent can join from across the continent and the diaspora. Partners who want to host a local community circle can note that on the Partners form."
   },
   {
     "question": "When does the next cohort start?",
@@ -25,23 +25,23 @@
   },
   {
     "question": "Will I receive a certificate?",
-    "answer": "Yes. Students who complete the required coursework, projects, and assessments receive an AfriCloud Institute certificate of completion for that programme. Career support and mentorship are included where listed on the programme card."
+    "answer": "Yes. Scholars who complete the required coursework, projects, and assessments receive an AfriCloud Institute certificate of completion for that programme. Career support and mentorship are included where listed on the programme card."
   },
   {
-    "question": "Do you help with jobs after training?",
-    "answer": "Many programmes include career placement support, job assistance, or career coaching. We help with portfolio projects, interview readiness, and guidance on industry roles. We cannot guarantee employment, but we focus on practical, job-ready skills."
+    "question": "Do you help with jobs and ventures after training?",
+    "answer": "Yes — that is the point. We mentor scholars to be job-ready and entrepreneurial: portfolio projects, interview readiness, and guidance on industry roles and launching. We cannot guarantee employment or funding for a startup, but we focus on practical skills and a community that opens doors."
   },
   {
     "question": "What if I miss a live session?",
-    "answer": "Instructor-led sessions are important, but we understand work and family commitments. Speak to your instructor or coordinator as soon as you know you will miss a class so you can access recordings or catch-up material where they are available for your cohort."
+    "answer": "Live mentorship matters, but we understand work, school, and family commitments. Speak to your instructor or coordinator as soon as you know you will miss a class so you can access recordings or catch-up material where they are available for your cohort."
   },
   {
-    "question": "Can my company sponsor staff for training?",
-    "answer": "Yes. Use the Corporate training page to register employees: company details, headcount, and the programmes you want. We will reply with dates, fees, and a proposed plan. Individuals should use Apply Now instead."
+    "question": "Can my organisation partner with AfriCloud Institute?",
+    "answer": "Yes. Use the Partners page if you want to sponsor scholars, offer internships, send mentors, or host a community programme. Individuals seeking a scholarship should use Apply Now instead."
   },
   {
     "question": "How do you protect my application and personal data?",
-    "answer": "We collect only what we need to process your application and deliver training, and we do not sell your information. Please do not send passwords, OTPs, or payment card numbers through the website forms. See the Privacy Policy and Information Security Statement for details."
+    "answer": "We collect only what we need to review scholarships and deliver mentoring, and we do not sell your information. Please do not send passwords, OTPs, or payment card numbers through the website forms. See the Privacy Policy and Information Security Statement for details."
   },
   {
     "question": "Is ethical hacking training legal?",
@@ -49,10 +49,10 @@
   },
   {
     "question": "How can I reach AfriCloud Institute?",
-    "answer": "Use the Contact page for email, phone, and location details, submit the Apply Now form, or join the cohort WhatsApp group if you have been admitted. We typically respond through email or a phone call to the number you provide."
+    "answer": "Use the Contact page for email, phone, and location details, submit a scholarship application, or join the WhatsApp community if you have been admitted. We typically respond through email or a phone call to the number you provide."
   },
   {
     "question": "Where can I read your legal policies?",
-    "answer": "The Legal page has the Whistle Blowing Policy, Privacy Policy, Terms and Conditions, and Code of Conduct. Those documents cover applications, fees, classroom behaviour, authorised labs, and how to report serious concerns. Do not use the WhatsApp group for confidential complaints."
+    "answer": "The Legal page has the Whistle Blowing Policy, Privacy Policy, Terms and Conditions, and Code of Conduct. Those documents cover scholarship applications, classroom behaviour, authorised labs, and how to report serious concerns. Do not use the WhatsApp group for confidential complaints."
   }
 ]

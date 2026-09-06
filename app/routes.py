@@ -197,7 +197,7 @@ def apply():
             save_application(record)
             notify_application(get_site(), record, course)
             flash(
-                "Thank you. Your application has been received. Our team will contact you by email or phone. If you have been admitted to a cohort, join the WhatsApp group from the success note on this page.",
+                "Thank you. Your scholarship application has been received. Our team will contact you by email or phone. If you are admitted, we will invite you to the scholar WhatsApp community.",
                 "success",
             )
             return redirect(url_for("main.apply", programme=form["programme"]))
@@ -233,7 +233,7 @@ def corporate():
         selected_programmes = [item for item in request.form.getlist("programmes") if get_bootcamp(item)]
         errors = []
         if len(form["company_name"]) < 2:
-            errors.append("Please enter the company name.")
+            errors.append("Please enter the organisation or company name.")
         if len(form["contact_name"]) < 2:
             errors.append("Please enter the contact person's name.")
         if not _EMAIL_RE.match(form["email"]):
@@ -266,7 +266,7 @@ def corporate():
             save_corporate_enquiry(record)
             notify_corporate(get_site(), record)
             flash(
-                "Thank you. We have received your corporate training request and will contact you with a proposed plan.",
+                "Thank you. We have received your partnership request and will be in touch about how we can raise talent together.",
                 "success",
             )
             return redirect(url_for("main.corporate"))

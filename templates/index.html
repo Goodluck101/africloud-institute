@@ -6,8 +6,8 @@
         <h1>{{ home.hero_title }}</h1>
         <p class="hero-subtitle">{{ home.hero_subtitle }}</p>
         <div class="hero-actions">
-            <a href="/apply" class="btn btn-large">Apply Now</a>
-            <a href="/courses" class="btn btn-ghost">View bootcamps</a>
+            <a href="/apply" class="btn btn-large">Apply for a scholarship</a>
+            <a href="/courses" class="btn btn-ghost">View programmes</a>
             <a href="{{ site.whatsapp_group }}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">{{ site.whatsapp_label }}</a>
         </div>
     </div>
@@ -30,7 +30,7 @@
     <div class="container">
         <div class="section-heading">
             <h2 class="section-title">HOW IT <span class="highlight">WORKS</span></h2>
-            <p>From application to classroom in three clear steps.</p>
+            <p>From scholarship application to a job-ready, builder-ready cohort.</p>
         </div>
         <div class="steps-grid">
             {% for item in home.how_it_works %}
@@ -62,7 +62,7 @@
                     <h3>{{ course.title }}</h3>
                     <p>{{ course.description[:140] }}{% if course.description|length > 140 %}…{% endif %}</p>
                     <div class="mini-course-footer">
-                        <strong>{{ course.price }}</strong>
+                        <strong>Full scholarship</strong>
                         <a href="/apply?programme={{ course.id }}">Apply</a>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
             {% endfor %}
         </div>
         <div class="page-actions">
-            <a href="/courses" class="btn btn-primary">See all bootcamps</a>
+            <a href="/courses" class="btn btn-primary">See all programmes</a>
         </div>
     </div>
 </section>
@@ -95,7 +95,7 @@
     <div class="container">
         <div class="section-heading">
             <h2 class="section-title">WHAT LEARNERS <span class="highlight">SAY</span></h2>
-            <p>Voices from people who trained with us as individuals or as part of a company cohort.</p>
+            <p>Voices from scholars we have mentored into tech careers and ventures.</p>
         </div>
         <div class="testimonial-grid">
             {% for item in testimonials %}
@@ -115,7 +115,7 @@
 <section class="corporate-band">
     <div class="container corporate-band-inner">
         <div>
-            <p class="kicker dark-kicker">For companies</p>
+            <p class="kicker dark-kicker">For organisations</p>
             <h2>{{ home.corporate.title }}</h2>
             <p>{{ home.corporate.text }}</p>
             <ul class="plain-list">
@@ -124,7 +124,7 @@
                 {% endfor %}
             </ul>
             <div class="hero-actions">
-                <a href="/corporate" class="btn btn-large">Register your employees</a>
+                <a href="/corporate" class="btn btn-large">Become a partner</a>
                 <a href="/contact" class="btn btn-secondary">Talk to us</a>
             </div>
         </div>
