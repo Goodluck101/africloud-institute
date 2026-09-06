@@ -40,11 +40,10 @@
                     </div>
                     <div>
                         <span>Scholarship</span>
-                        <strong>100% funded</strong>
+                        <strong>Fully funded</strong>
                     </div>
                 </div>
 
-                <h3 class="course-features-title">What you'll get</h3>
                 <ul class="course-feature-list">
                     {% for feature in course.features %}
                     <li>{{ feature }}</li>
@@ -53,10 +52,7 @@
 
                 <div class="course-foot">
                     <p class="payment-info">{{ page.scholarship_note }}</p>
-                    <div class="course-actions">
-                        <a href="/apply?programme={{ course.id }}" class="btn btn-primary">Apply for a scholarship</a>
-                        <a href="/faq" class="btn btn-secondary">Questions</a>
-                    </div>
+                    <a href="/apply?programme={{ course.id }}" class="btn btn-primary">Apply for a scholarship</a>
                 </div>
             </div>
         </article>
