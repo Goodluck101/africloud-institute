@@ -1,15 +1,5 @@
 [
   {
-    "name": "Goodluck Adiole",
-    "title": "Co-Founder",
-    "image": "/static/images/founders/goodluck-adiole.jpg",
-    "bio": [
-      "Goodluck Adiole is a seasoned technology professional, educator, and cybersecurity specialist with strong expertise across cloud computing, DevOps, and secure digital infrastructure. He has hands-on experience designing, deploying, and securing cloud-native systems using platforms such as AWS and Azure, with a professional background spanning cybersecurity operations, infrastructure automation, and DevSecOps practices within enterprise environments.",
-      "Driven by a passion for skills development and digital empowerment, Goodluck is committed to bridging the technology skills gap by delivering practical, industry-relevant training tailored to real-world demands. His work combines technical depth with a strong focus on mentorship, capacity building, and career readiness for aspiring tech professionals.",
-      "He is a Co-Founder of AfriCloud Institute, where he plays a key role in shaping the NGO's vision, curriculum, and mentoring standards — so scholars gain hands-on, job-ready skills in Cybersecurity, DevOps, Cloud Engineering, Data Analytics, and emerging technologies, and are prepared to work and to build."
-    ]
-  },
-  {
     "name": "Godsall Chibuike Adiole, MBA",
     "title": "Co-Founder",
     "image": "/static/images/founders/godsall-adiole.jpg",
@@ -17,6 +7,16 @@
       "Godsall Chibuike Adiole, MBA is a SAP Cybersecurity and GRC Architect with more than nine years of leadership in SAP S/4HANA cybersecurity, full-cycle GRC implementations, and strategic security role design. He specialises in access risk management, segregation of duties, privileged access governance, and SAP BTP security, including IAS/IPS, SAML, and SSO across hybrid environments.",
       "He has delivered SAP GRC Access Control, role redesign, and security architecture for organisations including the African Development Bank Group, Boehringer Ingelheim, and Infotech Risks Security LLC. His work spans SAP Enterprise Threat Detection, Fiori and S/4HANA authorisations, and Cloud Identity Services. He holds an Executive MBA from Quantic School of Business and Technology and an MBA in Cybersecurity from Nexford University.",
       "He is a Co-Founder of AfriCloud Institute, where he brings enterprise SAP security, GRC, and cybersecurity practice into the NGO's curriculum, mentorship, and scholarship programmes."
+    ]
+  },
+  {
+    "name": "Goodluck Adiole",
+    "title": "Co-Founder",
+    "image": "/static/images/founders/goodluck-adiole.jpg",
+    "bio": [
+      "Goodluck Adiole is a seasoned technology professional, educator, and cybersecurity specialist with strong expertise across cloud computing, DevOps, and secure digital infrastructure. He has hands-on experience designing, deploying, and securing cloud-native systems using platforms such as AWS and Azure, with a professional background spanning cybersecurity operations, infrastructure automation, and DevSecOps practices within enterprise environments.",
+      "Driven by a passion for skills development and digital empowerment, Goodluck is committed to bridging the technology skills gap by delivering practical, industry-relevant training tailored to real-world demands. His work combines technical depth with a strong focus on mentorship, capacity building, and career readiness for aspiring tech professionals.",
+      "He is a Co-Founder of AfriCloud Institute, where he plays a key role in shaping the NGO's vision, curriculum, and mentoring standards — so scholars gain hands-on, job-ready skills in Cybersecurity, DevOps, Cloud Engineering, Data Analytics, and emerging technologies, and are prepared to work and to build."
     ]
   }
 ]
