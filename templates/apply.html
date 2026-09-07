@@ -4,7 +4,7 @@
     <div class="container">
         <p class="kicker">Full scholarships</p>
         <h1>Apply. We will carry the tuition.</h1>
-        <p class="lead">Tell us your story and the pathway you want. Every seat is a full scholarship. We reply with dates and next steps — never a fee.</p>
+        <p class="lead">Tell us your story and the pathway you want. Every seat is a full scholarship. We reply with dates and next steps, never a fee.</p>
     </div>
 </section>
 
@@ -45,7 +45,7 @@
                             <option value="">Select a programme</option>
                             {% for course in courses %}
                             <option value="{{ course.id }}" {% if form.programme == course.id %}selected{% endif %}>
-                                {{ course.title }} — {{ course.duration }}, next cohort {{ course.start_date }}
+                                {{ course.title }}: {{ course.duration }}, next cohort {{ course.start_date }}
                             </option>
                             {% endfor %}
                         </select>

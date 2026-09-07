@@ -10,7 +10,7 @@
       "id": "cybersecurity",
       "title": "Cybersecurity Professional Training",
       "description": "Master the fundamentals of protecting digital assets and infrastructure. This programme covers network security, threat detection, incident response, and security best practices to safeguard organisations against cyber threats.",
-      "image": "/static/images/courses/cybersecurity.webp",
+      "image": "/static/images/courses/cybersecurity.jpg",
       "duration": "6 Months",
       "duration_months": 6,
       "intake_every_months": 6,
@@ -18,17 +18,18 @@
       "schedule": "Live online · Weekends",
       "format": "Remote · Africa-first",
       "features": [
-        "Full scholarship — tuition-free",
+        "Full scholarship, tuition-free",
         "Expert-led mentorship sessions",
         "Hands-on security projects",
         "Career placement support"
-      ]
+      ],
+      "illustration": "/static/images/courses/cybersecurity.webp"
     },
     {
       "id": "devops",
       "title": "AWS DevOps Engineer Professional Program",
       "description": "Gain practical expertise in DevOps methodologies and best practices for continuous development, testing, and deployment. Learn configuration management, CI/CD pipelines, and monitoring throughout the software development lifecycle.",
-      "image": "/static/images/courses/devops.webp",
+      "image": "/static/images/courses/devops.jpg",
       "duration": "5 Months",
       "duration_months": 5,
       "intake_every_months": 5,
@@ -36,17 +37,18 @@
       "schedule": "Live online · Weeknights",
       "format": "Remote · Africa-first",
       "features": [
-        "Full scholarship — tuition-free",
+        "Full scholarship, tuition-free",
         "Guided mentorships",
         "Project-based learning",
         "Job assistance provided"
-      ]
+      ],
+      "illustration": "/static/images/courses/devops.webp"
     },
     {
       "id": "machine-learning",
       "title": "Machine Learning & Artificial Intelligence",
       "description": "Explore the cutting-edge world of AI and machine learning. Build intelligent systems using modern algorithms, neural networks, and deep learning frameworks to solve real-world problems and create innovative solutions.",
-      "image": "/static/images/courses/machine-learning.webp",
+      "image": "/static/images/courses/machine-learning.jpg",
       "duration": "7 Months",
       "duration_months": 7,
       "intake_every_months": 7,
@@ -54,17 +56,18 @@
       "schedule": "Live online · Saturdays",
       "format": "Remote · Africa-first",
       "features": [
-        "Full scholarship — tuition-free",
+        "Full scholarship, tuition-free",
         "Industry expert mentors",
         "Real-world ML projects",
         "Career guidance included"
-      ]
+      ],
+      "illustration": "/static/images/courses/machine-learning.webp"
     },
     {
       "id": "data-analytics",
       "title": "Data Analytics & Business Intelligence",
       "description": "Transform raw data into actionable insights. Learn data visualization, statistical analysis, and business intelligence tools to drive data-driven decision making and create compelling analytical reports.",
-      "image": "/static/images/courses/data-analytics.webp",
+      "image": "/static/images/courses/data-analytics.jpg",
       "duration": "5 Months",
       "duration_months": 5,
       "intake_every_months": 5,
@@ -72,17 +75,18 @@
       "schedule": "Live online · Weekends",
       "format": "Remote · Africa-first",
       "features": [
-        "Full scholarship — tuition-free",
+        "Full scholarship, tuition-free",
         "Professional mentorship",
         "Portfolio development",
         "Job placement assistance"
-      ]
+      ],
+      "illustration": "/static/images/courses/data-analytics.webp"
     },
     {
       "id": "ethical-hacking",
       "title": "Ethical Hacking & Penetration Testing",
       "description": "Learn offensive security techniques to identify and exploit vulnerabilities ethically. Master penetration testing methodologies, vulnerability assessment, and security auditing to protect systems from malicious attacks.",
-      "image": "/static/images/courses/ethical-hacking.webp",
+      "image": "/static/images/courses/ethical-hacking.jpg",
       "duration": "6 Months",
       "duration_months": 6,
       "intake_every_months": 6,
@@ -90,17 +94,18 @@
       "schedule": "Live online · Weeknights",
       "format": "Remote · Africa-first",
       "features": [
-        "Full scholarship — tuition-free",
+        "Full scholarship, tuition-free",
         "Practical hacking labs",
         "Hands-on penetration testing",
         "Career coaching support"
-      ]
+      ],
+      "illustration": "/static/images/courses/ethical-hacking.webp"
     },
     {
       "id": "graphics-design",
       "title": "Professional Graphics Design",
       "description": "Unleash your creativity and master visual communication. Learn industry-standard design tools, typography, color theory, and branding to create stunning graphics for digital and print media.",
-      "image": "/static/images/courses/graphics-design.webp",
+      "image": "/static/images/courses/graphics-design.jpg",
       "duration": "4 Months",
       "duration_months": 4,
       "intake_every_months": 4,
@@ -108,17 +113,18 @@
       "schedule": "Live online · Weekends",
       "format": "Remote · Africa-first",
       "features": [
-        "Full scholarship — tuition-free",
+        "Full scholarship, tuition-free",
         "Creative mentorship",
         "Portfolio building projects",
         "Freelance and venture guidance"
-      ]
+      ],
+      "illustration": "/static/images/courses/graphics-design.webp"
     },
     {
       "id": "software-engineering",
       "title": "Software Engineering Bootcamp",
       "description": "Build robust, scalable applications using modern software development practices. Master programming fundamentals, software architecture, testing methodologies, and agile development to become a professional software engineer.",
-      "image": "/static/images/courses/software-engineering.webp",
+      "image": "/static/images/courses/software-engineering.jpg",
       "duration": "8 Months",
       "duration_months": 8,
       "intake_every_months": 8,
@@ -126,17 +132,18 @@
       "schedule": "Live online · Weeknights",
       "format": "Remote · Africa-first",
       "features": [
-        "Full scholarship — tuition-free",
+        "Full scholarship, tuition-free",
         "Expert code reviews",
         "Real-world projects",
         "Career and founder support"
-      ]
+      ],
+      "illustration": "/static/images/courses/software-engineering.webp"
     },
     {
       "id": "python-programming",
       "title": "Python Programming Mastery",
       "description": "Master Python, one of the most versatile programming languages. From basics to advanced concepts, learn web development, automation, data manipulation, and scripting to build powerful applications.",
-      "image": "/static/images/courses/python-programming.webp",
+      "image": "/static/images/courses/python-programming.jpg",
       "duration": "4 Months",
       "duration_months": 4,
       "intake_every_months": 4,
@@ -144,11 +151,12 @@
       "schedule": "Live online · Saturdays",
       "format": "Remote · Africa-first",
       "features": [
-        "Full scholarship — tuition-free",
+        "Full scholarship, tuition-free",
         "Live coding sessions",
         "Project-based curriculum",
         "Job readiness training"
-      ]
+      ],
+      "illustration": "/static/images/courses/python-programming.webp"
     }
   ]
 }

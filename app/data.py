@@ -72,6 +72,7 @@ def _enrich_bootcamp(course, today=None):
     item["status"] = status
     item["status_label"] = status_label
     item["in_session"] = in_session
+    item.setdefault("illustration", item.get("image"))
     if in_session:
         item["current_end"] = _format_date(previous_end)
     return item

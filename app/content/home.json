@@ -1,7 +1,7 @@
 {
   "hero_kicker": "An NGO for African talent",
   "hero_title": "If they have the fire, we fund the path.",
-  "hero_subtitle": "Full scholarships. Live mentors. A community that raises young Africans to be job-ready professionals — and entrepreneurs who build at home.",
+  "hero_subtitle": "Full scholarships. Live mentors. A community that raises young Africans to be job-ready professionals and entrepreneurs who build at home.",
   "hero_note": "Cloud · DevOps · AI · Cybersecurity · Data · Software",
   "manifesto": "Drive over tuition. Talent over postcode. Community over the classroom alone.",
   "how_heading": "How a scholar rises",
@@ -15,12 +15,12 @@
     {
       "step": "02",
       "title": "Earn the seat",
-      "text": "We select for hunger and fit — then award a full scholarship. Tuition is ours to carry."
+      "text": "We select for hunger and fit, then award a full scholarship. Tuition is ours to carry."
     },
     {
       "step": "03",
       "title": "Learn, ship, launch",
-      "text": "Live labs, mentors, and a community that prepares you for a job — or a venture with your name on it."
+      "text": "Live labs, mentors, and a community that prepares you for a job or a venture with your name on it."
     }
   ],
   "promises": [
@@ -34,7 +34,7 @@
     },
     {
       "title": "Hired for the work",
-      "text": "Portfolios and labs that look like the job — because they are the job."
+      "text": "Portfolios and labs that look like the job, because they are the job."
     },
     {
       "title": "Built to found",
@@ -56,7 +56,7 @@
       },
       {
         "title": "Talent should come home",
-        "text": "We train people to compete globally — and to raise teams, products, and communities on this continent."
+        "text": "We train people to compete globally, and to raise teams, products, and communities on this continent."
       }
     ]
   },
@@ -67,7 +67,7 @@
     },
     {
       "title": "Career changers",
-      "text": "Move into cloud, security, data, or software without pausing your life — or paying a fortune to begin."
+      "text": "Move into cloud, security, data, or software without pausing your life or paying a fortune to begin."
     },
     {
       "title": "Partners who build with us",
@@ -116,7 +116,7 @@
     "title": "Your organisation can raise a generation.",
     "text": "Partner Alliance is how companies, NGOs, and community hosts put scholarships, internships, and mentors in the same room as African talent.",
     "points": [
-      "Sponsor a scholar — or a whole cohort",
+      "Sponsor a scholar, or a whole cohort",
       "Offer internships, apprenticeships, and real briefs",
       "Stand with us in communities across the continent"
     ]
@@ -125,7 +125,7 @@
   "founder_highlight": "the founders",
   "founder_message": [
     "AfriCloud Institute is an NGO, not a paywall. If a young person has the fire to learn, tuition should not be the reason they never start.",
-    "We find them. We fund them. We mentor them — in Cloud, DevOps, AI, Cybersecurity, and the crafts teams actually hire for — until they are job-ready, and until some of them are ready to found.",
+    "We find them. We fund them. We mentor them in Cloud, DevOps, AI, Cybersecurity, and the crafts teams actually hire for, until they are job-ready, and until some of them are ready to found.",
     "That is how communities rise: one scholar who gets in, does the work, and holds the door for the next.",
     "Come as a scholar. Come as a partner. Come as a mentor. Help us raise African talent in the open."
   ],

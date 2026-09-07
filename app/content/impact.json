@@ -1,14 +1,14 @@
 {
   "hero_kicker": "Impact · UN SDGs",
   "hero_title": "We raise talent. The Global Goals get the dividend.",
-  "hero_lead": "AfriCloud Institute is an NGO. Scholarships, mentors, and community are how we contribute to the United Nations Sustainable Development Goals — quality education, decent work, innovation, equality, and partnership.",
+  "hero_lead": "AfriCloud Institute is an NGO. Scholarships, mentors, and community are how we contribute to the United Nations Sustainable Development Goals: quality education, decent work, innovation, equality, and partnership.",
   "mission": {
     "title": "Our Mission",
-    "text": "Award full scholarships. Mentor African talent in technology. Send them into the world job-ready — and send some of them out as founders who give back at home."
+    "text": "Award full scholarships. Mentor African talent in technology. Send them into the world job-ready, and send some of them out as founders who give back at home."
   },
   "vision": {
     "title": "Our Vision",
-    "text": "An Africa where hunger beats hardship: drive, not tuition, decides who enters tech — and talent stays long enough to raise the next table."
+    "text": "An Africa where hunger beats hardship: drive, not tuition, decides who enters tech, and talent stays long enough to raise the next table."
   },
   "agenda_note": "Our work is framed by the UN 2030 Agenda and supports the African Union’s Agenda 2063: a prosperous Africa based on inclusive growth, and a continent whose youth are skilled, employed, and entrepreneurial.",
   "core_values": [
@@ -18,7 +18,7 @@
     },
     {
       "title": "Equity",
-      "text": "A full scholarship is the point. Talent from across Africa — including young women and people locked out by cost — should be able to start."
+      "text": "A full scholarship is the point. Talent from across Africa, including young women and people locked out by cost, should be able to start."
     },
     {
       "title": "Community",
@@ -48,7 +48,7 @@
       },
       {
         "title": "Make scholars job-ready",
-        "text": "Deliver live mentoring, labs, and portfolios that match what teams hire for — not theory alone."
+        "text": "Deliver live mentoring, labs, and portfolios that match what teams hire for, not theory alone."
       },
       {
         "title": "Raise entrepreneurs",
@@ -77,7 +77,7 @@
         "id": "scholars",
         "title": "AfriCloud Scholars",
         "sdgs": ["4", "10"],
-        "text": "Full scholarships for live, remote bootcamps. Every seat is funded. Scholars choose a pathway and join a cohort — no tuition, no hidden course fee."
+        "text": "Full scholarships for live, remote bootcamps. Every seat is funded. Scholars choose a pathway and join a cohort: no tuition, no hidden course fee."
       },
       {
         "id": "mentorcircle",
@@ -95,7 +95,7 @@
         "id": "venturelab",
         "title": "Venture Lab",
         "sdgs": ["8", "9"],
-        "text": "Mentorship for scholars who will found and grow. Problem-solving, product thinking, and the discipline to ship — so Africa’s next ventures have operators, not only ideas."
+        "text": "Mentorship for scholars who will found and grow. Problem-solving, product thinking, and the discipline to ship, so Africa’s next ventures have operators, not only ideas."
       },
       {
         "id": "partners",
@@ -109,7 +109,7 @@
     "kicker": "UN 2030 Agenda",
     "title": "Our SDG Action Dashboard",
     "intro": "We do not pretend to deliver all 17 Goals. We go deep where scholarships and mentors actually move the needle.",
-    "footnote": "Target language follows the United Nations Sustainable Development Goals. Our contribution is through education, mentoring, employment pathways, entrepreneurship, inclusion, and partnership — not through unaudited impact claims."
+    "footnote": "Target language follows the United Nations Sustainable Development Goals. Our contribution is through education, mentoring, employment pathways, entrepreneurship, inclusion, and partnership, not through unaudited impact claims."
   },
   "sdgs": [
     {
@@ -124,7 +124,7 @@
         },
         {
           "id": "4.4",
-          "text": "Increase the number of youth and adults with relevant skills — including technical and vocational skills — for employment, decent jobs, and entrepreneurship."
+          "text": "Increase the number of youth and adults with relevant skills, including technical and vocational skills, for employment, decent jobs, and entrepreneurship."
         }
       ],
       "action": "AfriCloud Scholars and MentorCircle award full scholarships and live vocational training in Cloud, DevOps, AI, Cybersecurity, data, and software. JobReady Studio and Venture Lab are how Target 4.4 shows up in practice: skills for jobs and for founding."
@@ -220,7 +220,7 @@
       },
       {
         "title": "Work & ventures",
-        "text": "Career coaching and founder support turn skill into income — and into companies."
+        "text": "Career coaching and founder support turn skill into income and into companies."
       },
       {
         "title": "Community",

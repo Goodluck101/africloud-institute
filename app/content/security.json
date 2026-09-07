@@ -44,7 +44,7 @@
       "heading": "Training labs and acceptable use",
       "paragraphs": [
         "Hands-on labs, penetration-testing exercises, and cloud projects are provided only for authorised learning. Skills taught at AfriCloud Institute must never be used to attack, probe, or access systems without explicit permission from the owner.",
-        "Unauthorised scanning, exploitation, data theft, malware distribution, or fraud — including against classmates, AfriCloud Institute, or any third party — is prohibited and may lead to removal from a programme and referral to the appropriate authorities.",
+        "Unauthorised scanning, exploitation, data theft, malware distribution, or fraud, including against classmates, AfriCloud Institute, or any third party, is prohibited and may lead to removal from a programme and referral to the appropriate authorities.",
         "Treat lab data, dummy credentials, and classmate information as confidential. Do not copy production data into labs or use real customer environments for practice unless your employer has formally authorised it."
       ]
     },

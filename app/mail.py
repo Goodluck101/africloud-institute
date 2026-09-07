@@ -101,7 +101,7 @@ def _staff_notice_html(site, kicker, heading, intro, rows, subject):
         kicker=kicker,
         heading=heading,
         intro=intro,
-        rows=[{"label": label, "value": value or "—"} for label, value in rows],
+        rows=[{"label": label, "value": value or "-"} for label, value in rows],
     )
 
 
@@ -282,8 +282,8 @@ def _send_gmail_webhook(recipient, subject, text, html=None, reply_to=None):
 def format_fields(fields):
     lines = []
     for label, value in fields:
-        text = value if value else "—"
+        text = value if value else "-"
         if isinstance(text, list):
-            text = ", ".join(text) if text else "—"
+            text = ", ".join(text) if text else "-"
         lines.append(f"{label}: {text}")
     return "\n".join(lines)

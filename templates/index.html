@@ -79,7 +79,7 @@
             {% for course in featured_courses %}
             <article class="mini-course-card">
                 <div class="mini-course-media">
-                    <img src="{{ course.image }}" alt="{{ course.title }}">
+                    <img src="{{ course.illustration }}" alt="{{ course.title }}">
                     <span class="course-status course-status-{{ course.status }}">{{ course.status_label }}</span>
                 </div>
                 <div class="mini-course-body">
@@ -211,7 +211,7 @@
             <p>{{ paragraph }}</p>
             {% endfor %}
             <p class="vision-signature">
-                <strong>— {{ home.founder_name }}</strong><br>
+                <strong>{{ home.founder_name }}</strong><br>
                 {{ home.founder_role }}
             </p>
         </div>
